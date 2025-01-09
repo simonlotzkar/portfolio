@@ -3,6 +3,7 @@ import { SparklesCore } from "./ui/sparkles"
 import { TextGenerateEffect } from "./ui/text-generate-effect"
 import SocialLink from "./SocialLink"
 import { EmailLink } from "./EmailLink"
+import { myName, myTitle } from "@/data/homeData"
 
 /**
  * Full-screen display that shows my name, title, and has links to my email, linkedin,
@@ -34,12 +35,12 @@ const HomeSection = () => {
                     {/* FadeInText: My Name. */}
                     <TextGenerateEffect
                         className="uppercase text-center text-[40px] md:text-5xl lg:text-6l tracking-widest font-bold mb-4"
-                        words="Simon Lotzkar"
+                        words={myName}
                         duration={0} />
                     {/* FadeInText: My Title. */}
                     <TextGenerateEffect
                         className="text-center text-sm md:text-lg lg:text-2xl tracking-wider font-light mb-4"
-                        words="Software Developer (Vancouver, BC)"
+                        words={myTitle}
                         duration={0} />
                     {/* Section: Contact links. */}
                     <div className="flex justify-center space-x-6 mt-8">
