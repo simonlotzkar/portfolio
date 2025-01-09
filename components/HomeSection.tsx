@@ -3,7 +3,7 @@ import { SparklesCore } from "./ui/sparkles"
 import { TextGenerateEffect } from "./ui/text-generate-effect"
 import SocialLink from "./SocialLink"
 import { EmailLink } from "./EmailLink"
-import { myName, myTitle } from "@/data/homeData"
+import { myName, myTitle } from "@/data/messages"
 
 /**
  * Full-screen display that shows my name, title, and has links to my email, linkedin,
