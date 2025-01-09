@@ -7,32 +7,32 @@
     --radius: 0.5rem;
 
     --primary: 195 83% 38%;
-    --primary-foreground: 195 83% 58%;
+    --primary-light: 195 83% 58%;
 
     --secondary: 164 95% 43%;
-    --secondary-foreground: 164 95% 63%;
+    --secondary-light: 164 95% 63%;
 
     --accent: 42 100% 70%;
-    --accent-foreground: 42 100% 90%;
+    --accent-light: 42 100% 90%;
 
     --highlight: 346 84% 61%;
-    --highlight-foreground: 346 84% 81%;
+    --highlight-light: 346 84% 81%;
 
     --background: 195 83% 19%;
   }
 
   .dark {
     --primary: 195 83% 26%;
-    --primary-foreground: 195 83% 39%;
+    --primary-light: 195 83% 39%;
 
     --secondary: 164 95% 29%;
-    --secondary-foreground: 164 95% 42%;
+    --secondary-light: 164 95% 42%;
 
     --accent: 42 100% 47%;
-    --accent-foreground: 42 100% 60%;
+    --accent-light: 42 100% 60%;
 
     --highlight: 346 84% 41%;
-    --highlight-foreground: 346 84% 54%;
+    --highlight-light: 346 84% 54%;
 
     --background: 195 83% 13%;
   }
@@ -40,7 +40,7 @@
     @apply border-accent !scroll-smooth;
   }
   body {
-    @apply bg-background text-primary-foreground;
+    @apply bg-background text-accent-light;
   }
   button {
     @apply active:outline-none;

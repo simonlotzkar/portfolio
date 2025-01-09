@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
@@ -15,53 +16,55 @@ const config = {
   ],
   prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
+    extend: {
+      container: {
+        center: true,
+        padding: "2rem",
+        screens: {
+          "2xl": "1400px",
+        },
       },
+      colors: {
+        black: {
+          DEFAULT: "#000",
+          950: "#0a0a0a",
+          900: "#171717",
+          800: "#262626",
+          700: "#404040",
+        },
+        white: {
+          DEFAULT: "#FFF",
+          50: "#FAFAFA",
+          100: "#F5F5F5",
+          200: "#E5E5E5",
+          300: "#D4D4D4",
+        },
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          light: "hsl(var(--primary-light))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          light: "hsl(var(--secondary-light))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          light: "hsl(var(--accent-light))",
+        },
+        highlight: {
+          DEFAULT: "hsl(var(--highlight))",
+          light: "hsl(var(--highlight-light))",
+        },
+        background: "hsl(var(--background))",
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {},
+      animation: {},
     },
-    colors: {
-      black: {
-        DEFAULT: "#000",
-        950: "#0a0a0a",
-        900: "#171717",
-        800: "#262626",
-        700: "#404040",
-      },
-      white: {
-        DEFAULT: "#FFF",
-        50: "#FAFAFA",
-        100: "#F5F5F5",
-        200: "#E5E5E5",
-        300: "#D4D4D4",
-      },
-      primary: {
-        DEFAULT: "hsl(var(--primary))",
-        foreground: "hsl(var(--primary-foreground))",
-      },
-      secondary: {
-        DEFAULT: "hsl(var(--secondary))",
-        foreground: "hsl(var(--secondary-foreground))",
-      },
-      accent: {
-        DEFAULT: "hsl(var(--accent))",
-        foreground: "hsl(var(--accent-foreground))",
-      },
-      highlight: {
-        DEFAULT: "hsl(var(--highlight))",
-        foreground: "hsl(var(--highlight-foreground))",
-      },
-      background: "hsl(var(--background))",
-    },
-    borderRadius: {
-      lg: "var(--radius)",
-      md: "calc(var(--radius) - 2px)",
-      sm: "calc(var(--radius) - 4px)",
-    },
-    keyframes: {},
-    animation: {},
   },
   plugins: [
     addVariablesForColors,
