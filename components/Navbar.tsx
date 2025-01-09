@@ -1,14 +1,23 @@
+/**
+ * Fixed navigation bar at the top of the page. Active section is underlined.
+ * Links to page sections: Home, Projects, About, and to the Resume file.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered Navbar component.
+ */
 'use client';
 import React, { useState, useEffect } from 'react';
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
     const [activeSection, setActiveSection] = useState<string>('home');
 
+    // Initializes and maintains the activeSection when scrolling.
     useEffect(() => {
         const handleScroll = () => {
             const sections = document.querySelectorAll('section');
-            let currentSection = 'home';
+            let currentSection = 'home'; // Initialize to home.
 
+            // Set currentSection to one currently in view, default to home.
             sections.forEach((section) => {
                 const rect = section.getBoundingClientRect();
                 if (rect.top <= 0 && rect.bottom >= 0) {
@@ -19,8 +28,10 @@ const Navbar: React.FC = () => {
             setActiveSection(currentSection);
         };
 
+        // Add event listener for scrolling.
         window.addEventListener('scroll', handleScroll);
 
+        // Remove event listener when Navbar is unmounted.
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -35,7 +46,7 @@ const Navbar: React.FC = () => {
                             href="#home"
                             className={`p-4 text-secondary-light hover:text-secondary hover:border-b-2 font-bold text-lg ${activeSection === 'home' ? 'border-b-2' : 'border-b-0'}`}
                         >
-                            simonlotzkar.com
+                            simonlotzkar
                         </a>
                     </li>
                     <li>
@@ -48,10 +59,10 @@ const Navbar: React.FC = () => {
                     </li>
                     <li>
                         <a
-                            href="#contact"
+                            href="#about"
                             className={`p-4 hover:text-accent hover:border-b-2 ${activeSection === 'contact' ? 'border-b-2' : 'border-b-0'}`}
                         >
-                            Contact
+                            About
                         </a>
                     </li>
                     <li>

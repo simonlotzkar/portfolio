@@ -1,3 +1,13 @@
+/**
+ * Wraps children in link that opens the provided URL in a new tab.
+ *
+ * @component
+ * @param {SocialLinkProps} props - The props for the SocialLink component.
+ * @param {string} props.href - The URL to be opened when the link is clicked.
+ * @param {React.ReactNode} props.children - The child elements to be rendered inside the clickable element.
+ * @returns {JSX.Element} The rendered SocialLink component.
+ */
+
 import React from 'react'
 
 interface SocialLinkProps {
