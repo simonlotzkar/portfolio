@@ -1,27 +1,29 @@
+"use client";
+import React, { useState, useEffect } from "react";
+
 /**
  * Fixed navigation bar at the top of the page. Active section is underlined.
  * Links to page sections: Home, Projects, About, and to the Resume file.
  *
  * @component
  * @returns {JSX.Element} The rendered Navbar component.
+ *
+ * @author SimonLotzkar
  */
-'use client';
-import React, { useState, useEffect } from 'react';
-
 const Navbar = () => {
-    const [activeSection, setActiveSection] = useState<string>('home');
+    const [activeSection, setActiveSection] = useState<string>("home");
 
     // Initializes and maintains the activeSection when scrolling.
     useEffect(() => {
         const handleScroll = () => {
-            const sections = document.querySelectorAll('section');
-            let currentSection = 'home'; // Initialize to home.
+            const sections = document.querySelectorAll("section");
+            let currentSection = "home"; // Initialize to home.
 
             // Set currentSection to one currently in view, default to home.
             sections.forEach((section) => {
                 const rect = section.getBoundingClientRect();
                 if (rect.top <= 0 && rect.bottom >= 0) {
-                    currentSection = section.getAttribute('id') || 'home';
+                    currentSection = section.getAttribute("id") || "home";
                 }
             });
 
@@ -29,11 +31,11 @@ const Navbar = () => {
         };
 
         // Add event listener for scrolling.
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener("scroll", handleScroll);
 
         // Remove event listener when Navbar is unmounted.
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener("scroll", handleScroll);
         };
     }, []);
 
@@ -44,7 +46,7 @@ const Navbar = () => {
                     <li>
                         <a
                             href="#home"
-                            className={`p-4 text-secondary-light hover:text-secondary hover:border-b-2 font-bold text-lg ${activeSection === 'home' ? 'border-b-2' : 'border-b-0'}`}
+                            className={`p-4 text-secondary-light hover:text-secondary hover:border-b-2 font-bold text-lg ${activeSection === "home" ? "border-b-2" : "border-b-0"}`}
                         >
                             simonlotzkar
                         </a>
@@ -52,7 +54,7 @@ const Navbar = () => {
                     <li>
                         <a
                             href="#projects"
-                            className={`p-4 hover:text-accent hover:border-b-2 ${activeSection === 'projects' ? 'border-b-2' : 'border-b-0'}`}
+                            className={`p-4 hover:text-accent hover:border-b-2 ${activeSection === "projects" ? "border-b-2" : "border-b-0"}`}
                         >
                             Projects
                         </a>
@@ -60,7 +62,7 @@ const Navbar = () => {
                     <li>
                         <a
                             href="#about"
-                            className={`p-4 hover:text-accent hover:border-b-2 ${activeSection === 'about' ? 'border-b-2' : 'border-b-0'}`}
+                            className={`p-4 hover:text-accent hover:border-b-2 ${activeSection === "about" ? "border-b-2" : "border-b-0"}`}
                         >
                             About
                         </a>

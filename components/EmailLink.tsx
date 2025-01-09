@@ -1,3 +1,11 @@
+"use client";
+import React, { useState, useRef, useEffect } from "react";
+
+interface EmailLinkProps {
+    email: string;
+    children: React.ReactNode;
+}
+
 /**
  * Wraps children in a link that when clicked creates a popup with the provided email
  * already highlighted for copying. Dismisses based on clicking away or on the X.
@@ -7,16 +15,9 @@
  * @param {string} props.email - The email address to be displayed in the popup.
  * @param {React.ReactNode} props.children - The child elements to be rendered inside the clickable element.
  * @returns {JSX.Element} The rendered EmailLink component.
+ *
+ * @author SimonLotzkar
  */
-
-"use client";
-import React, { useState, useRef, useEffect } from "react";
-
-interface EmailLinkProps {
-    email: string;
-    children: React.ReactNode;
-}
-
 const EmailLink: React.FC<EmailLinkProps> = ({ email, children }) => {
     const [showPopup, setShowPopup] = useState(false);
     const popupRef = useRef<HTMLDivElement>(null);
