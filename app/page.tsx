@@ -13,7 +13,7 @@ export default function Home() {
           <section id="projects">
             <Hero />
           </section>
-          <section id="contact">
+          <section id="about">
             <Hero />
           </section>
         </div>

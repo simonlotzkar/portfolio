@@ -60,7 +60,7 @@ const Navbar = () => {
                     <li>
                         <a
                             href="#about"
-                            className={`p-4 hover:text-accent hover:border-b-2 ${activeSection === 'contact' ? 'border-b-2' : 'border-b-0'}`}
+                            className={`p-4 hover:text-accent hover:border-b-2 ${activeSection === 'about' ? 'border-b-2' : 'border-b-0'}`}
                         >
                             About
                         </a>

@@ -1,10 +1,22 @@
-// Imported from AceternityUI
+// https://ui.aceternity.com/components/text-generate-effect
 
 "use client";
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/lib/utils";
 
+/**
+ * A cool text effect that fades in text on page load, one by one.
+ *
+ * @param words - The text to be displayed and animated.
+ * @param className - Optional class name to apply custom styles.
+ * @param filter - Optional boolean to apply a blur filter to the text. Defaults to true.
+ * @param duration - Optional duration for the animation effect. Defaults to 0.5 seconds.
+ *
+ * @returns A JSX element that displays the animated text.
+ *
+ * @author AceternityUI
+ */
 export const TextGenerateEffect = ({
   words,
   className,

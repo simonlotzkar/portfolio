@@ -1,4 +1,4 @@
-// Imported from AceternityUI
+// https://ui.aceternity.com/components/sparkles
 
 "use client";
 import React, { useId, useMemo } from "react";
@@ -20,6 +20,22 @@ type ParticlesProps = {
   particleColor?: string;
   particleDensity?: number;
 };
+
+/**
+ * A configurable sparkles component that can be used as a background or as a standalone component.
+ *
+ * @param id - Optional ID of the particles container.
+ * @param className - Optional class name of the sparkles component.
+ * @param background - Optional background color of the particles container. Defaults to "#0d47a1".
+ * @param particleSize - Optional size of the particles.
+ * @param minSize - Optional minimum size of the particles. Defaults to 1.
+ * @param maxSize - Optional maximum size of the particles. Defaults to 3.
+ * @param speed - Optional speed of the particles. Defaults to 4.
+ * @param particleColor - Optional color of the particles. Defaults to "#ffffff".
+ * @param particleDensity - Optional density of the particles. Defaults to 120.
+ *
+ * @author AceternityUI
+ */
 export const SparklesCore = (props: ParticlesProps) => {
   const {
     id,
