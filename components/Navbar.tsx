@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
     }, []);
 
     return (
-        <nav className="fixed top-0 left-0 w-full bg-background p-4 shadow-md z-10">
+        <nav className="fixed top-0 left-0 w-full bg-background/[0.9] p-4 shadow-md z-50">
             <div className="container mx-auto flex items-center justify-center">
                 <ul className="flex items-center space-x-1">
                     <li>

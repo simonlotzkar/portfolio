@@ -20,29 +20,10 @@
 
     --background: 195 83% 19%;
   }
-
-  .dark {
-    --primary: 195 83% 26%;
-    --primary-light: 195 83% 39%;
-
-    --secondary: 164 95% 29%;
-    --secondary-light: 164 95% 42%;
-
-    --accent: 42 100% 47%;
-    --accent-light: 42 100% 60%;
-
-    --highlight: 346 84% 41%;
-    --highlight-light: 346 84% 54%;
-
-    --background: 195 83% 13%;
-  }
   * {
-    @apply border-accent !scroll-smooth;
+    @apply border-accent text-accent-light !scroll-smooth;
   }
   body {
-    @apply bg-background text-accent-light;
-  }
-  button {
-    @apply active:outline-none;
+    @apply bg-background;
   }
 }
