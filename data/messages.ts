@@ -4,7 +4,7 @@ export const myTitle = "Software Developer (Vancouver, BC)";
 
 // Projects Section
 interface Project {
-    className: string;
+    className?: string;
     title: string;
     description: string;
     img: string;
@@ -15,18 +15,31 @@ interface Project {
 }
 export const myProjects: Project[] = [
     {
-        className: "project-class-1",
-        title: "Project One",
-        description: "Description for project one.",
-        img: "path/to/image1.jpg",
-        githubLink: "https://github.com/user/project-one",
+        title: "Autoblocks",
+        description: "for Dungeons and Dragons 5th Edition by Wizards of the Coast. This is a tool for dungeon and dragons (D&D) dungeon masters (DMs) to automate non player characters (NPCs).",
+        img: "/autoblocks.png",
+        githubLink: "https://github.com/simonlotzkar/autoblocks",
     },
     {
-        className: "project-class-2",
-        title: "Project Two",
-        description: "Description for project two.",
-        img: "path/to/image2.jpg",
-        githubLink: "https://github.com/user/project-two",
-        hostedLink: "https://hostedlink2.com",
+        title: "McWorking",
+        description: "McDonalds icecream machine status tracker. ",
+        img: "/catalog-landscape.png",
+        githubLink: "https://github.com/simonlotzkar/1800_20233_BBYTeam17",
+        hostedLink: "https://comp1800-teambby17.web.app/",
+    },
+    {
+        title: "Organica",
+        description: "Bulk buy online store for BCIT students to buy directly from farms to reduce costs and improve health.",
+        img: "/home-landscape.png",
+        githubLink: "https://github.com/kamalkdolikay/qds",
+        link: "https://devpost.com/software/qds",
+        linkName: "Devpost Link",
+    },
+    {
+        title: "Medikate",
+        description: "Medical assistant chatbot using a custom ChatGPT.",
+        img: "/home.png",
+        githubLink: "https://github.com/Danton1/2800-202410-BBY34",
+        hostedLink: "https://medikate.onrender.com/",
     }
 ];

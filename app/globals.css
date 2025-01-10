@@ -20,9 +20,11 @@
 
     --background: 195 83% 19%;
   }
+
   * {
     @apply border-accent text-accent-light !scroll-smooth focus:outline-none;
   }
+
   body {
     @apply bg-background;
   }
