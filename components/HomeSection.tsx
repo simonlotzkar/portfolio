@@ -63,6 +63,15 @@ const HomeSection = () => {
                             </svg>
                         </SocialLink>
                     </div>
+                    {/* Section: Button to scroll to Projects. */}
+                    <div className="flex justify-center items-center mt-16">
+                        {/* Button: Scroll to Projects. */}
+                        <a href="#projects" className="flex items-center justify-center w-10 h-10 border-2 rounded-full shadow-lg border-accent-light hover:bg-secondary transition duration-300">
+                            <svg fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+                                <path d="M12 16.5l-8-8h16l-8 8z" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
