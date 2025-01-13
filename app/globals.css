@@ -28,4 +28,9 @@
   body {
     @apply bg-background;
   }
+
+  section {
+    @apply scroll-mt-14;
+    /* Matches the height of the navbar */
+  }
 }

@@ -19,7 +19,7 @@ const Navbar = () => {
             const sections = document.querySelectorAll("section");
             let currentSection = "home"; // Initialize to home.
 
-            // Set currentSection to one currently in view, default to home.
+            // Set currentSection to what's currently in view, default to home.
             sections.forEach((section) => {
                 const rect = section.getBoundingClientRect();
                 if (rect.top <= 0 && rect.bottom >= 0) {
