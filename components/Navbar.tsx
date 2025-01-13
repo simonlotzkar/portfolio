@@ -69,7 +69,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            href="/"
+                            href="/resume.pdf" target="_blank" rel="noopener noreferrer"
                             className="p-4 hover:text-accent hover:border-b-2"
                         >
                             Resume
