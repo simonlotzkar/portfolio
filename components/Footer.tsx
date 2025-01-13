@@ -7,17 +7,17 @@ const Footer = () => {
             {/* Effect: Random particles. */}
             <div className="absolute inset-0 h-full w-full">
                 {/* Gradients */}
-                <div className="absolute inset-x-0 sm:inset-x-10 top-0 bg-gradient-to-r from-transparent via-secondary to-transparent h-[2px] w-full sm:w-3/4 blur-sm" />
-                <div className="absolute inset-x-0 sm:inset-x-10 top-0 bg-gradient-to-r from-transparent via-secondary to-transparent h-px w-full sm:w-3/4" />
-                <div className="absolute inset-x-0 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-secondary-light to-transparent h-[5px] w-full sm:w-1/2 blur-sm" />
-                <div className="absolute inset-x-0 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-secondary-light to-transparent h-px w-full sm:w-1/2" />
+                <div className="absolute inset-x-0 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-secondary to-transparent h-[2px] w-full sm:w-3/4 blur-sm" />
+                <div className="absolute inset-x-0 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-secondary to-transparent h-px w-full sm:w-3/4" />
+                <div className="absolute inset-x-0 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-secondary-light to-transparent h-[5px] w-full sm:w-1/2 blur-sm" />
+                <div className="absolute inset-x-0 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-secondary-light to-transparent h-px w-full sm:w-1/2" />
 
                 {/* Core component */}
                 <SparklesCore
                     background="transparent"
                     minSize={0.4}
                     maxSize={1}
-                    particleDensity={200}
+                    particleDensity={600}
                     className="w-full h-full"
                     particleColor="#FFFFFF"
                 />
