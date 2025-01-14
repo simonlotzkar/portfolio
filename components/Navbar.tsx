@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 /**
  * Fixed navigation bar at the top of the page. Active section is underlined.
- * Links to page sections: Home, Projects, and to the Resume file.
+ * Links to page sections: Title, Projects, and to the Resume file.
  *
  * @component
  * @returns {JSX.Element} The rendered Navbar component.
@@ -11,19 +11,19 @@ import React, { useState, useEffect } from "react";
  * @author SimonLotzkar
  */
 const Navbar = () => {
-    const [activeSection, setActiveSection] = useState<string>("home");
+    const [activeSection, setActiveSection] = useState<string>("title");
 
     // Initializes and maintains the activeSection when scrolling.
     useEffect(() => {
         const handleScroll = () => {
             const sections = document.querySelectorAll("section");
-            let currentSection = "home"; // Initialize to home.
+            let currentSection = "title"; // Initialize to title.
 
-            // Set currentSection to what's currently in view, default to home.
+            // Set currentSection to what's currently in view, default to title.
             sections.forEach((section) => {
                 const rect = section.getBoundingClientRect();
                 if (rect.top <= 0 && rect.bottom >= 0) {
-                    currentSection = section.getAttribute("id") || "home";
+                    currentSection = section.getAttribute("id") || "title";
                 }
             });
 
@@ -46,11 +46,11 @@ const Navbar = () => {
 
                 <ul className="flex items-center space-x-1">
 
-                    {/* Home. */}
+                    {/* Title. */}
                     <li>
                         <a
-                            href="#home"
-                            className={`p-4 text-secondary-light hover:text-secondary hover:border-b-2 font-medium text-base ${activeSection === "home" ? "border-b-2" : "border-b-0"}`}
+                            href="/#title"
+                            className={`p-4 text-secondary-light hover:text-secondary hover:border-b-2 font-medium text-base ${activeSection === "title" ? "border-b-2" : "border-b-0"}`}
                         >
                             simonlotzkar
                         </a>
@@ -59,7 +59,7 @@ const Navbar = () => {
                     {/* Projects. */}
                     <li>
                         <a
-                            href="#projects"
+                            href="/#projects"
                             className={`p-4 hover:text-accent hover:border-b-2 ${activeSection === "projects" ? "border-b-2" : "border-b-0"}`}
                         >
                             Projects

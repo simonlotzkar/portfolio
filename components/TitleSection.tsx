@@ -11,13 +11,13 @@ import { myName, myTitle } from "@/data/messages"
  * The main text is faded in using a text-generate effect.
  *
  * @component
- * @returns {JSX.Element} The rendered HomeSection component.
+ * @returns {JSX.Element} The rendered TitleSection component.
  *
  * @author SimonLotzkar
  */
-const HomeSection = () => {
+const TitleSection = () => {
     return (
-        <section id="home">
+        <section id="title">
             <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-primary to-secondary text-center">
                 {/* Effect: Random particles. */}
                 <div className="w-full absolute inset-0 h-screen">
@@ -78,4 +78,4 @@ const HomeSection = () => {
     )
 }
 
-export default HomeSection
+export default TitleSection
