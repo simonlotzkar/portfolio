@@ -17,7 +17,7 @@ const ProjectsSection = () => {
       <h1 className="text-4xl font-bold py-5 text-center text-secondary">Projects</h1>
       {/* Section: Project cards. */}
       <div className="max-w-4xl mx-auto space-y-10">
-        {myProjects.map(({ className, title, description, img, hostedLink, githubLink, link, linkName }, i) => (
+        {myProjects.map(({ className, title, description, img, hostedLink, githubLink, link, linkName, articleLink}, i) => (
           <ProjectCard
             key={i}
             title={title}
@@ -28,6 +28,7 @@ const ProjectsSection = () => {
             githubLink={githubLink}
             link={link}
             linkName={linkName}
+            articleLink={articleLink}
           />
         ))}
       </div>

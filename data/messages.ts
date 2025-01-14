@@ -8,6 +8,7 @@ interface Project {
     title: string;
     description: string;
     img: string;
+    articleLink?: string;
     githubLink?: string;
     hostedLink?: string;
     link?: string;
@@ -20,6 +21,7 @@ export const myProjects: Project[] = [
         img: "/images/medikate/medikate-thumbnail.png",
         githubLink: "https://github.com/Danton1/2800-202410-BBY34",
         hostedLink: "https://medikate.onrender.com/",
+        articleLink: "/articles/medikate",
     },
     {
         title: "Organica",
@@ -27,7 +29,8 @@ export const myProjects: Project[] = [
         img: "/images/organica/organica-thumbnail.png",
         githubLink: "https://github.com/kamalkdolikay/qds",
         link: "https://devpost.com/software/qds",
-        linkName: "Devpost Link",
+        linkName: "Devpost",
+        articleLink: "/articles/organica",
     },
     {
         title: "McWorking",
@@ -35,11 +38,13 @@ export const myProjects: Project[] = [
         img: "/images/mcworking/mcworking-thumbnail.png",
         githubLink: "https://github.com/simonlotzkar/1800_20233_BBYTeam17",
         hostedLink: "https://comp1800-teambby17.web.app/",
+        articleLink: "/articles/mcworking",
     },
     {
         title: "Autoblocks",
         description: "for Dungeons and Dragons 5th Edition by Wizards of the Coast. This is a tool for dungeon and dragons (D&D) dungeon masters (DMs) to automate non player characters (NPCs).",
         img: "/images/autoblocks/autoblocks-thumbnail.png",
         githubLink: "https://github.com/simonlotzkar/autoblocks",
+        articleLink: "/articles/autoblocks",
     },
 ];
