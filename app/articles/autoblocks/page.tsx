@@ -9,21 +9,22 @@ export default function AutoblocksArticle() {
             <ArticleTitle
                 title="Autoblocks"
                 subtitle="for Dungeons and Dragons 5th Edition by Wizards of the Coast."
+                className="pt-14"
             />
 
             {/* Introduction */}
             <section id="intro">
-                <ArticleContent img="/images/autoblocks/autoblocks-thumbnail.png" imgCaption="Home screen.">
+                <ArticleContent>
                     <p>
                         Using <span className="font-bold text-secondary">Autoblocks</span>, you can do the following:
                     </p>
-                    <ul className="list-disc pl-6 space-y-2">
+                    <ul>
                         <li>
                             simulate rolling any number of dice, with any number of sides, and with any modifier
                         </li>
                         <li>
                             view a list of statblocks by their names (library):
-                            <ul className="list-disc pl-6">
+                            <ul>
                                 <li>
                                     view statblock details
                                 </li>
@@ -37,7 +38,7 @@ export default function AutoblocksArticle() {
                         </li>
                         <li>
                             view a list of NPCs by their names and hit points (encounter):
-                            <ul className="list-disc pl-6">
+                            <ul>
                                 <li>
                                     auto roll actions, initiatives, or ability checks
                                 </li>
@@ -51,6 +52,15 @@ export default function AutoblocksArticle() {
                         </li>
                     </ul>
                 </ArticleContent>
+                <section id="features">
+                    <ArticleTitle subtitle="Screens and Features" className="pt-2"/>
+                    <ArticleContent img="/images/autoblocks/autoblocks-home.png" alt="Home Screen">
+                        <p>The home screen has access to the dice roller, library, encounter, and is where the user can saving and load their data.</p>
+                    </ArticleContent>
+                    <ArticleContent img="/images/autoblocks/autoblocks-diceroller.png" alt="Custom Dice Roller">
+                        <p>The dice roller is a separate window that opens and has a temporary log of all rolls made with it. The rolls can be configured by the number of dice, the sides of the dice, and the modifier to add to each roll.</p>
+                    </ArticleContent>
+                </section>
             </section>
         </>
     );

@@ -4,28 +4,31 @@ interface ArticleContentProps {
     children?: React.ReactNode;
     title?: string;
     img?: string;
-    imgCaption?: string;
+    alt?: string;
+    className?: string;
 }
 
 /**
- * Displays a distinct part of content in an article. Optional title, image, and image caption.
+ * Displays a distinct part of content in an article. 
+ * Can have a title, image, and image caption.
  *
  * @component
  * @param {Object} props - The properties object.
  * @param {React.ReactNode} [props.children] - The content to be displayed inside the article.
  * @param {string} [props.title] - The title of the article.
  * @param {string} [props.img] - The URL of the image to be displayed in the article.
- * @param {string} [props.imgCaption] - The caption of the image to be displayed below it.
+ * @param {string} [props.alt] - The caption of the image to be displayed below it.
+ * @param {string} [props.className] - Additional CSS classes to apply to the component.
  * @returns {JSX.Element} The rendered article content component.
  *
  * @author SimonLotzkar
  */
-const ArticleContent: React.FC<ArticleContentProps> = ({ children, title, img, imgCaption}) => {
+const ArticleContent: React.FC<ArticleContentProps> = ({ children, title, img, alt, className }) => {
     return (
-        <div className="flex flex-col p-4 max-w-2xl mx-auto">
+        <div className={`article-content flex flex-col px-4 pt-4 max-w-2xl mx-auto ${className}`}>
 
             {/* Optional Text: Content title. */}
-            {title && <h1 className="text-2xl font-bold mb-4 text-center">{title}</h1>}
+            {title && <h1 className="text-xl font-bold mb-4 text-center">{title}</h1>}
 
             {/* Optional Component: Content body. */}
             {children}
@@ -35,11 +38,11 @@ const ArticleContent: React.FC<ArticleContentProps> = ({ children, title, img, i
                 <div className="flex flex-col items-center pt-4">
                     <img
                         src={img}
-                        alt={imgCaption || title + " image" || "Article image"}
+                        alt={alt || title + " image" || "Article image"}
                         className="shadow-2xl rounded-lg w-xl h-auto max-h-96 object-cover"
                     />
-                    {imgCaption && (
-                        <p className="mt-1 font-light text-sm">{imgCaption}</p>
+                    {alt && (
+                        <p className="mt-1 font-light text-sm">{alt}</p>
                     )}
                 </div>
             )}
