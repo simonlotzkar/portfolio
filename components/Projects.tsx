@@ -3,14 +3,14 @@ import ProjectCard from "./ProjectCard"
 import { myProjects } from "@/data/messages"
 
 /**
- * Projects title and project card for each project.
+ * Title and a project card for each project.
  *
  * @component
- * @returns {JSX.Element} The rendered ProjectsSection component.
+ * @returns {JSX.Element} The rendered Projects component.
  *
  * @author SimonLotzkar
  */
-const ProjectsSection = () => {
+const Projects = () => {
   return (
     <section id="projects">
       {/* Text: Projects title. */}
@@ -36,4 +36,4 @@ const ProjectsSection = () => {
   )
 }
 
-export default ProjectsSection
+export default Projects

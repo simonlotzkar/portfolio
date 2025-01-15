@@ -1,11 +1,11 @@
-import TitleSection from "@/components/TitleSection";
-import ProjectsSection from "@/components/ProjectsSection";
+import LandingTitle from "@/components/LandingTitle";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
     <>
-      <TitleSection />
-      <ProjectsSection />
+      <LandingTitle />
+      <Projects />
     </>
   );
 }
