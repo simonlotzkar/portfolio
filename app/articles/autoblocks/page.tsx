@@ -13,7 +13,7 @@ export default function AutoblocksArticle() {
 
             {/* Introduction */}
             <section id="intro">
-                <ArticleContent img="/images/autoblocks/autoblocks-thumbnail.png">
+                <ArticleContent img="/images/autoblocks/autoblocks-thumbnail.png" imgCaption="Home screen.">
                     <p>
                         Using <span className="font-bold text-secondary">Autoblocks</span>, you can do the following:
                     </p>
