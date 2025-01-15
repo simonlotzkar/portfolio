@@ -25,7 +25,7 @@ interface ArticleContentProps {
  */
 const ArticleContent: React.FC<ArticleContentProps> = ({ children, title, img, alt, className }) => {
     return (
-        <div className={`article-content flex flex-col px-4 pt-4 max-w-2xl mx-auto ${className}`}>
+        <div className={`article-content flex flex-col px-4 max-w-2xl mx-auto ${className}`}>
 
             {/* Optional Text: Content title. */}
             {title && <h1 className="text-xl font-bold mb-4 text-center">{title}</h1>}
@@ -42,7 +42,7 @@ const ArticleContent: React.FC<ArticleContentProps> = ({ children, title, img, a
                         className="shadow-2xl rounded-lg w-xl h-auto max-h-96 object-cover"
                     />
                     {alt && (
-                        <p className="mt-1 font-light text-sm">{alt}</p>
+                        <p className="pb-2 font-light text-sm">{alt}</p>
                     )}
                 </div>
             )}

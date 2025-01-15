@@ -5,16 +5,16 @@ import React from "react";
 export default function AutoblocksArticle() {
     return (
         <>
-            {/* Title */}
+            {/* Text: Title and Subtitle. */}
             <ArticleTitle
                 title="Autoblocks"
                 subtitle="for Dungeons and Dragons 5th Edition by Wizards of the Coast."
                 className="pt-14"
             />
 
-            {/* Introduction */}
+            {/* Section: Introduction. */}
             <section id="intro">
-                <ArticleContent>
+                <ArticleContent className="pt-2">
                     <p>
                         Using <span className="font-bold text-secondary">Autoblocks</span>, you can do the following:
                     </p>
@@ -52,6 +52,8 @@ export default function AutoblocksArticle() {
                         </li>
                     </ul>
                 </ArticleContent>
+
+                {/* Section: Screens and Features */}
                 <section id="features">
                     <ArticleTitle subtitle="Screens and Features" className="pt-2"/>
                     <ArticleContent img="/images/autoblocks/autoblocks-home.png" alt="Home Screen">
