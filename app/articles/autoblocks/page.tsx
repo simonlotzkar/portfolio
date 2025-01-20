@@ -1,4 +1,5 @@
 import ArticleContent from "@/components/ArticleContent";
+import ArticleSignOff from "@/components/ArticleSignOff";
 import ArticleTitle from "@/components/ArticleTitle";
 import React from "react";
 
@@ -138,7 +139,7 @@ export default function Page() {
             </section>
 
             {/* Section: Future. */}
-            <section id="future" className="space-y-4 pb-10">
+            <section id="future" className="space-y-4">
 
                 {/* Text: Future subtitle. */}
                 <ArticleTitle subtitle="Future Plans" className="pt-2" />
@@ -157,13 +158,10 @@ export default function Page() {
                         <li>add temporary hp</li>
                     </ul>
                 </ArticleContent>
-
-                <ArticleContent title="Thanks for reading!">
-                    <div className="text-center">
-                        <p>Written by <span className="font-bold text-secondary">Simon Lotzkar</span> on <span className="font-light text-secondary-light">2025-01-20</span></p>
-                    </div>
-                </ArticleContent>
             </section>
+
+            {/* Text: Sign off */}
+            <ArticleSignOff date="2025-01-20" />
         </>
     );
 }
