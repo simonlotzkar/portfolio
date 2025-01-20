@@ -12,7 +12,7 @@ import { myProjects } from "@/data/messages"
  */
 const Projects = () => {
   return (
-    <section id="projects">
+    <section id="projects" className="pb-10">
       {/* Text: Projects title. */}
       <h1 className="text-4xl font-bold py-5 text-center text-secondary">Projects</h1>
       {/* Section: Project cards. */}

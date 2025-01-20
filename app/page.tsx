@@ -1,7 +1,7 @@
 import LandingTitle from "@/components/LandingTitle";
 import Projects from "@/components/Projects";
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <LandingTitle />

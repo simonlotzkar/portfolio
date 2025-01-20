@@ -2,7 +2,7 @@ import ArticleContent from "@/components/ArticleContent";
 import ArticleTitle from "@/components/ArticleTitle";
 import React from "react";
 
-export default function AutoblocksArticle() {
+export default function Page() {
     return (
         <>
             {/* Text: Title and Subtitle. */}
@@ -138,7 +138,7 @@ export default function AutoblocksArticle() {
             </section>
 
             {/* Section: Future. */}
-            <section id="future" className="space-y-4">
+            <section id="future" className="space-y-4 pb-10">
 
                 {/* Text: Future subtitle. */}
                 <ArticleTitle subtitle="Future Plans" className="pt-2" />
