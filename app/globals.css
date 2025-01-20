@@ -34,10 +34,6 @@
     /* Matches the height of the navbar */
   }
 
-  .article-content > ul {
-    @apply space-y-2;
-  }
-
   .article-content ul {
     @apply list-disc pl-6;
   }

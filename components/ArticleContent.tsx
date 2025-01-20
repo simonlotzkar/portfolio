@@ -28,7 +28,7 @@ const ArticleContent: React.FC<ArticleContentProps> = ({ children, title, img, a
         <div className={`article-content flex flex-col px-4 max-w-2xl mx-auto ${className}`}>
 
             {/* Optional Text: Content title. */}
-            {title && <h1 className="text-xl font-bold mb-4 text-center">{title}</h1>}
+            {title && <h1 className="text-xl font-bold text-center">{title}</h1>}
 
             {/* Optional Component: Content body. */}
             {children}
