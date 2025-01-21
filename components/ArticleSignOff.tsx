@@ -21,7 +21,7 @@ const ArticleSignOff: React.FC<ArticleSignOffProps> = ({ date }) => {
     return (
         <div className="py-8">
             <ArticleContent title="Thanks for reading!">
-                <div className="text-center">
+                <div className="">
                     <p>Written by <span className="font-bold text-secondary">{myName}</span> on <span className="font-light text-secondary-light">{date}</span></p>
                     <p className="font-thin italic text-primary-light">{myTitle}</p>
                 </div>
