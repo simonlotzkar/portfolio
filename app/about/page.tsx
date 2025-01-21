@@ -78,7 +78,7 @@ export default function Page() {
                         <li>The Witcher by Andrzej Sapkowski</li>
                         <li>Song of Ice and Fire by George R.R. Martin</li>
                         <li>Red Rising Saga by Pierce Brown</li>
-                        <li>Inheritance Cycle by Pierce Brown</li>
+                        <li>Inheritance Cycle by Christopher Paolini</li>
                         <li>The Heir Chronicles by Cinda Williams Chima</li>
                     </ol>
                 </ArticleContent>
