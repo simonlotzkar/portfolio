@@ -15,10 +15,10 @@ const Navbar = () => {
 
                 <ul className="flex items-center space-x-1">
 
-                    {/* Title. */}
+                    {/* Home. */}
                     <li>
                         <a
-                            href="/#title"
+                            href="/"
                             className={"p-4 text-secondary-light hover:text-secondary hover:border-b-2 font-medium text-base"}
                         >
                             simonlotzkar
@@ -28,10 +28,10 @@ const Navbar = () => {
                     {/* Projects. */}
                     <li>
                         <a
-                            href="/#projects"
+                            href="/about"
                             className={"p-4 hover:text-accent hover:border-b-2"}
                         >
-                            Projects
+                            About
                         </a>
                     </li>
 
