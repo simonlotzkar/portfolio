@@ -34,6 +34,15 @@ const LandingTitle = () => {
             {/* Section: Main content. */}
             <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] z-10">
 
+                {/* Image: GitHub Avatar */}
+                <div className="flex justify-center mb-6">
+                    <img
+                        src="https://github.com/simonlotzkar.png"
+                        alt="GitHub Profile"
+                        className="border-4 border-primary w-32 h-32 rounded-full shadow-lg"
+                    />
+                </div>
+
                 {/* FadeInText: My Name. */}
                 <TextGenerateEffect
                     className="uppercase text-center text-[40px] md:text-5xl lg:text-6l tracking-widest font-bold mb-4"
