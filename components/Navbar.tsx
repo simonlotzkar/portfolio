@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * Fixed navigation bar at the top of the page. Links to the home page sections:
  * Title, Projects, and to the Resume file.
@@ -8,6 +10,8 @@
  * @author SimonLotzkar
  */
 const Navbar = () => {
+    const currentPath = window.location.pathname;
+
     return (
         <nav className="fixed top-0 left-0 w-full bg-background/[0.9] p-4 shadow-md z-50">
 
@@ -19,9 +23,12 @@ const Navbar = () => {
                     <li>
                         <a
                             href="/"
-                            className={"p-4 text-secondary-light hover:text-secondary hover:border-b-2 font-medium text-base"}
+                            className={
+                                `p-4 text-secondary-light hover:text-secondary font-medium text-base hover:border-b-2 
+                                ${currentPath === "/" ? "border-b-2 border-accent" : ""}`
+                            }
                         >
-                            simonlotzkar
+                            Home
                         </a>
                     </li>
 
@@ -29,7 +36,10 @@ const Navbar = () => {
                     <li>
                         <a
                             href="/about"
-                            className={"p-4 hover:text-accent hover:border-b-2"}
+                            className={
+                                `p-4 hover:text-accent hover:border-b-2
+                                ${currentPath === "/about" ? "border-b-2 border-accent" : ""}`
+                            }
                         >
                             About
                         </a>

@@ -69,14 +69,14 @@ export default function Page() {
 
                 {/* Text: Favourites intro */}
                 <ArticleContent>
-                    <p>I'm a massive fan of fiction and storytelling, whether that's video games, books, movies, or even dungeons and dragons. I think you can tell a decent amount about a person by their favourites, so here's some of mine. Note: Work in progress, and forever changing!</p>
+                    <p>I'm a massive fan of fiction and storytelling, whether that's video games, books, movies, or even dungeons and dragons. I think you can tell a decent amount about a person by their favourites, so here's some of mine!</p>
                 </ArticleContent>
 
                 {/* Text: Books */}
                 <ArticleContent title="Books">
                     <ol className="list-decimal pl-6">
-                        <li>The Witcher by Andrzej Sapkowski</li>
-                        <li>Song of Ice and Fire by George R.R. Martin</li>
+                        <li>The Witcher Saga by Andrzej Sapkowski</li>
+                        <li>A Song of Ice and Fire by George R.R. Martin</li>
                         <li>Red Rising Saga by Pierce Brown</li>
                         <li>Inheritance Cycle by Christopher Paolini</li>
                         <li>The Heir Chronicles by Cinda Williams Chima</li>
@@ -86,11 +86,11 @@ export default function Page() {
                 {/* Text: Video games */}
                 <ArticleContent title="Video Games">
                     <ol className="list-decimal pl-6">
-                        <li>The Legend of Zelda: Twillight Princess</li>
-                        <li>Dragon Age: Origins</li>
-                        <li>Witcher 3: The Wild Hunt</li>
-                        <li>Bioshock</li>
-                        <li>Halo 3</li>
+                        <li>The Legend of Zelda: Twillight Princess by Eiji Aonuma (Nintendo)</li>
+                        <li>Dragon Age: Origins by Dan Tudge (Bioware)</li>
+                        <li>Witcher 3: The Wild Hunt by Konrad Tomaszkiewicz (CD Projekt Red)</li>
+                        <li>Bioshock by Ken Levine (2K)</li>
+                        <li>Halo 3 by Joseph Staten (Bungie)</li>
                     </ol>
                 </ArticleContent>
             </section>
