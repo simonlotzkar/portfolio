@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import NavSectionLink from "./NavSectionLink";
 
 /**
  * Fixed navigation bar at the top of the page. Links to the home page sections:
@@ -56,76 +57,56 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav ref={navbarRef} className="fixed top-0 left-0 w-full bg-background/[0.9] p-4 shadow-md z-50">
+        <nav ref={navbarRef} className="fixed top-0 left-0 w-full bg-background/[0.9] py-4 px-2 sm:px-4 shadow-md z-50">
 
             <div className="container mx-auto flex items-center justify-center">
 
-                <ul className="flex items-center space-x-1">
+                <ul className="flex items-center space-x-0 sm:space-x-1">
 
                     {/* Link: Title section. */}
-                    <li>
-                        <a
-                            href="/#title"
-                            className={
-                                `p-4 text-secondary-light hover:text-secondary font-medium text-base hover:border-b-2 
-                                ${activeSection === "title" ? "border-b-2 border-accent" : ""}`
-                            }
-                        >
-                            simonlotzkar
-                        </a>
-                    </li>
+                    <NavSectionLink
+                        alt="🏠"
+                        name="simonlotzkar"
+                        sectionId="title"
+                        activeSection={activeSection}
+                        textClassName="font-medium text-secondary-light group-hover:text-secondary"
+                    />
 
                     {/* Link: Projects section. */}
-                    <li>
-                        <a
-                            href="/#projects"
-                            className={
-                                `p-4 hover:text-accent hover:border-b-2
-                                ${activeSection === "projects" ? "border-b-2 border-accent" : ""}`
-                            }
-                        >
-                            Projects
-                        </a>
-                    </li>
+                    <NavSectionLink
+                        alt="🚀"
+                        name="Projects"
+                        sectionId="projects"
+                        activeSection={activeSection}
+                        textClassName="group-hover:text-accent"
+                    />
 
                     {/* Link: Experience section. */}
-                    <li>
-                        <a
-                            href="/#experience"
-                            className={
-                                `p-4 hover:text-accent hover:border-b-2
-                                ${activeSection === "experience" ? "border-b-2 border-accent" : ""}`
-                            }
-                        >
-                            Experience
-                        </a>
-                    </li>
+                    <NavSectionLink
+                        alt="💼"
+                        name="Experience"
+                        sectionId="experience"
+                        activeSection={activeSection}
+                        textClassName="group-hover:text-accent"
+                    />
 
                     {/* Link: Education section. */}
-                    <li>
-                        <a
-                            href="/#education"
-                            className={
-                                `p-4 hover:text-accent hover:border-b-2
-                                ${activeSection === "education" ? "border-b-2 border-accent" : ""}`
-                            }
-                        >
-                            Education
-                        </a>
-                    </li>
+                    <NavSectionLink
+                        alt="📚"
+                        name="Education"
+                        sectionId="education"
+                        activeSection={activeSection}
+                        textClassName="group-hover:text-accent"
+                    />
 
                     {/* Link: Skills section. */}
-                    <li>
-                        <a
-                            href="/#skills"
-                            className={
-                                `p-4 hover:text-accent hover:border-b-2
-                                ${activeSection === "skills" ? "border-b-2 border-accent" : ""}`
-                            }
-                        >
-                            Skills
-                        </a>
-                    </li>
+                    <NavSectionLink
+                        alt="🔨"
+                        name="Skills"
+                        sectionId="skills"
+                        activeSection={activeSection}
+                        textClassName="group-hover:text-accent"
+                    />
 
                     {/* Link: Resume pdf. */}
                     <li>
