@@ -1,9 +1,10 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 /**
  * Fixed navigation bar at the top of the page. Links to the home page sections:
- * Title, Projects, and to the Resume file.
+ * Title, Projects, Experience, Education, Skills, and Resume. Underlines which
+ * section is in view.
  *
  * @component
  * @returns {JSX.Element} The rendered Navbar component.
@@ -11,48 +12,122 @@ import { useEffect, useState } from "react";
  * @author SimonLotzkar
  */
 const Navbar = () => {
-    const [currentPath, setCurrentPath] = useState("");
+    // Keep state of the activeSection, default to title.
+    const [activeSection, setActiveSection] = useState<string>("title");
 
+    // Keep ref to the navbar for calculating its height when adjusting view offset.
+    const navbarRef = useRef<HTMLElement | null>(null);
+
+    // Initializes and maintains the activeSection when scrolling.
     useEffect(() => {
-        if (typeof window !== "undefined") {
-            setCurrentPath(window.location.pathname);
-        }
+
+        const handleScroll = () => {
+
+            // Get all sections in DOM.
+            const sections = document.querySelectorAll("section");
+
+            // Initialize currentSection to title.
+            let currentSection = "title";
+
+            // Get the navbar's height using the navbarRef.
+            const navbarHeight = navbarRef.current?.getBoundingClientRect().height || 0;
+
+            // Set currentSection to what's currently in view, defaults to title.
+            sections.forEach((section) => {
+
+                const rect = section.getBoundingClientRect();
+
+                if (rect.top - navbarHeight <= 0 && rect.bottom - navbarHeight >= 0) {
+
+                    currentSection = section.getAttribute("id") || "title";
+                }
+            });
+
+            setActiveSection(currentSection);
+        };
+
+        // Add event listener for scrolling.
+        window.addEventListener("scroll", handleScroll);
+
+        // Remove event listener when Navbar is unmounted.
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
     }, []);
 
     return (
-        <nav className="fixed top-0 left-0 w-full bg-background/[0.9] p-4 shadow-md z-50">
+        <nav ref={navbarRef} className="fixed top-0 left-0 w-full bg-background/[0.9] p-4 shadow-md z-50">
 
             <div className="container mx-auto flex items-center justify-center">
 
                 <ul className="flex items-center space-x-1">
 
-                    {/* Home. */}
+                    {/* Link: Title section. */}
                     <li>
                         <a
-                            href="/"
+                            href="/#title"
                             className={
                                 `p-4 text-secondary-light hover:text-secondary font-medium text-base hover:border-b-2 
-                                ${currentPath === "/" ? "border-b-2 border-accent" : ""}`
+                                ${activeSection === "title" ? "border-b-2 border-accent" : ""}`
                             }
                         >
-                            Home
+                            simonlotzkar
                         </a>
                     </li>
 
-                    {/* Projects. */}
+                    {/* Link: Projects section. */}
                     <li>
                         <a
-                            href="/about"
+                            href="/#projects"
                             className={
                                 `p-4 hover:text-accent hover:border-b-2
-                                ${currentPath === "/about" ? "border-b-2 border-accent" : ""}`
+                                ${activeSection === "projects" ? "border-b-2 border-accent" : ""}`
                             }
                         >
-                            About
+                            Projects
                         </a>
                     </li>
 
-                    {/* Resume. */}
+                    {/* Link: Experience section. */}
+                    <li>
+                        <a
+                            href="/#experience"
+                            className={
+                                `p-4 hover:text-accent hover:border-b-2
+                                ${activeSection === "experience" ? "border-b-2 border-accent" : ""}`
+                            }
+                        >
+                            Experience
+                        </a>
+                    </li>
+
+                    {/* Link: Education section. */}
+                    <li>
+                        <a
+                            href="/#education"
+                            className={
+                                `p-4 hover:text-accent hover:border-b-2
+                                ${activeSection === "education" ? "border-b-2 border-accent" : ""}`
+                            }
+                        >
+                            Education
+                        </a>
+                    </li>
+
+                    {/* Link: Skills section. */}
+                    <li>
+                        <a
+                            href="/#skills"
+                            className={
+                                `p-4 hover:text-accent hover:border-b-2
+                                ${activeSection === "skills" ? "border-b-2 border-accent" : ""}`
+                            }
+                        >
+                            Skills
+                        </a>
+                    </li>
+
+                    {/* Link: Resume pdf. */}
                     <li>
                         <a
                             href="/resume.pdf" target="_blank" rel="noopener noreferrer"
