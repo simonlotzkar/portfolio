@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 
 /**
  * Fixed navigation bar at the top of the page. Links to the home page sections:
@@ -10,7 +11,13 @@
  * @author SimonLotzkar
  */
 const Navbar = () => {
-    const currentPath = window.location.pathname;
+    const [currentPath, setCurrentPath] = useState("");
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setCurrentPath(window.location.pathname);
+        }
+    }, []);
 
     return (
         <nav className="fixed top-0 left-0 w-full bg-background/[0.9] p-4 shadow-md z-50">
