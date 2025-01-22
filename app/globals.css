@@ -37,4 +37,15 @@
   .article-content ul {
     @apply list-disc pl-6;
   }
+
+  .no-scrollbar {
+    overflow: auto;
+    /* For Firefox */
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    /* For Chrome, Safari, and Edge */
+    display: none;
+  }
 }

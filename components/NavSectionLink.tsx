@@ -30,11 +30,11 @@ const NavSectionLink: React.FC<NavSectionLinkProps> = ({ alt, name, sectionId, a
             <a
                 href={`/#${sectionId}`}
                 className={`
-                    p-2 sm:p-4 hover:border-b-2 group
+                    p-4 hover:border-b-2 group
                     ${activeSection === sectionId ? "border-b-2 border-accent" : ""}
                 `}
             >
-                <span className={`${textClassName} sm:hidden}`}>{alt}</span>
+                <span className={`${textClassName} sm:hidden`}>{alt}</span>
                 <span className={`${textClassName} hidden sm:inline`}>{name}</span>
             </a>
         </li>

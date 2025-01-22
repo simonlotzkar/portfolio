@@ -57,11 +57,11 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav ref={navbarRef} className="fixed top-0 left-0 w-full bg-background/[0.9] py-4 px-2 sm:px-4 shadow-md z-50">
+        <nav ref={navbarRef} className="fixed top-0 left-0 w-full bg-background/[0.9] p-4 shadow-md z-50 overflow-x-scroll no-scrollbar">
 
             <div className="container mx-auto flex items-center justify-center">
 
-                <ul className="flex items-center space-x-0 sm:space-x-1">
+                <ul className="flex items-center space-x-1">
 
                     {/* Link: Title section. */}
                     <NavSectionLink
