@@ -30,7 +30,7 @@ const NavSectionLink: React.FC<NavSectionLinkProps> = ({ alt, name, sectionId, a
             <a
                 href={`/#${sectionId}`}
                 className={`
-                    p-4 hover:border-b-2 group
+                    py-4 px-4 sm:px-2 md:px-4 hover:border-b-2 group
                     ${activeSection === sectionId ? "border-b-2 border-accent" : ""}
                 `}
             >

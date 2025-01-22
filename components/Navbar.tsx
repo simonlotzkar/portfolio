@@ -57,11 +57,11 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav ref={navbarRef} className="fixed top-0 left-0 w-full bg-background/[0.9] p-4 shadow-md z-50 overflow-x-scroll no-scrollbar">
+        <nav ref={navbarRef} className="fixed top-0 left-0 w-full bg-background/[0.9] py-4 px-4 sm:px-2 md:px-4 shadow-md z-50 overflow-x-scroll no-scrollbar">
 
             <div className="container mx-auto flex items-center justify-center">
 
-                <ul className="flex items-center space-x-1">
+                <ul className="flex items-center space-x-0 sm:space-x-1">
 
                     {/* Link: Title section. */}
                     <NavSectionLink
@@ -112,9 +112,10 @@ const Navbar = () => {
                     <li>
                         <a
                             href="/resume.pdf" target="_blank" rel="noopener noreferrer"
-                            className="p-4 hover:text-accent hover:border-b-2"
+                            className="p-2 sm:p-3 md:p-4 hover:text-accent hover:border-b-2"
                         >
-                            Resume
+                            <span className="sm:hidden">📄</span>
+                            <span className="hidden sm:inline">Resume</span>
                         </a>
                     </li>
                 </ul>
