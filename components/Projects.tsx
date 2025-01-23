@@ -14,7 +14,7 @@ const Projects = () => {
   return (
     <section id="projects" className="pb-10">
       {/* Text: Projects title. */}
-      <h1 className="text-4xl font-bold py-5 text-center text-secondary">My Projects</h1>
+      <h1 className="text-4xl font-semibold py-5 text-center text-secondary">My Projects</h1>
       {/* Section: Project cards. */}
       <div className="mx-auto space-y-10 flex flex-col items-center ">
         {myProjects.map(({ className, title, subtitle, date, description, img, hostedLink, githubLink, link, linkName, articleLink}, i) => (
