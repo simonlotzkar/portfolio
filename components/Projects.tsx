@@ -16,7 +16,7 @@ const Projects = () => {
       {/* Text: Projects title. */}
       <h1 className="text-4xl font-bold py-5 text-center text-secondary">Projects</h1>
       {/* Section: Project cards. */}
-      <div className="max-w-4xl mx-auto space-y-10">
+      <div className="max-w-4xl mx-auto space-y-10 flex flex-col items-center ">
         {myProjects.map(({ className, title, description, img, hostedLink, githubLink, link, linkName, articleLink}, i) => (
           <ProjectCard
             key={i}

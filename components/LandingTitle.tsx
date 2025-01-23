@@ -17,7 +17,7 @@ import { myName, myTitle } from "@/data/messages"
  */
 const LandingTitle = () => {
     return (
-        <section id="title" className="flex items-center justify-center min-h-screen bg-gradient-to-r from-primary to-secondary text-center">
+        <section id="title" className="w-full flex items-center justify-center min-h-screen bg-gradient-to-r from-primary to-secondary text-center">
 
             {/* Effect: Random particles. */}
             <div className="w-full absolute inset-0 h-screen">

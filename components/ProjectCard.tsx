@@ -42,10 +42,7 @@ export const ProjectCard = ({
     articleLink?: string;
 }) => {
     return (
-        <div className={cn("flex flex-col sm:flex-row justify-center items-center", className)}>
-
-            {/* Image: Project image. */}
-            <img src={img} alt={title} className="shadow-2xl rounded-lg w-4/5 sm:w-2/3 h-auto max-h-96 object-cover" />
+        <div className={cn("w-4/5 flex flex-col sm:flex-row justify-center items-center shadow-2xl bg-primary hover:border-4 rounded-lg", className)}>
 
             {/* Section: Project Text. */}
             <div className="sm:ml-4 w-4/5 sm:w-1/3">
@@ -114,6 +111,9 @@ export const ProjectCard = ({
                     )}
                 </ul>
             </div>
+
+            {/* Image: Project image. */}
+            <img src={img} alt={title} className="rounded-lg m-4 w-1/2 h-auto max-h-96 object-cover" />
         </div>
     );
 };

@@ -57,7 +57,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav ref={navbarRef} className="fixed top-0 left-0 w-full bg-background/[0.9] py-4 px-4 sm:px-2 md:px-4 shadow-md z-50 overflow-x-scroll no-scrollbar">
+        <nav ref={navbarRef} className="fixed top-0 left-0 w-full bg-primary-dark/[0.9] py-4 px-4 sm:px-2 md:px-4 shadow-md z-50 overflow-x-scroll no-scrollbar">
 
             <div className="container mx-auto flex items-center justify-center">
 

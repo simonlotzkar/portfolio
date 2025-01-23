@@ -8,17 +8,19 @@
 
     --primary: 195 83% 38%;
     --primary-light: 195 83% 58%;
+    --primary-dark: 195 83% 18%;
 
     --secondary: 164 95% 43%;
     --secondary-light: 164 95% 63%;
+    --secondary-dark: 164 95% 23%;
 
     --accent: 42 100% 70%;
     --accent-light: 42 100% 90%;
+    --accent-dark: 42 100% 50%;
 
     --highlight: 346 84% 61%;
     --highlight-light: 346 84% 81%;
-
-    --background: 195 83% 19%;
+    --highlight-dark: 346 84% 41%;
   }
 
   * {
@@ -26,7 +28,7 @@
   }
 
   body {
-    @apply bg-background;
+    @apply bg-primary-light;
   }
 
   section {

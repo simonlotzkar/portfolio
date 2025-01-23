@@ -42,18 +42,22 @@ const config = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           light: "hsl(var(--primary-light))",
+          dark: "hsl(var(--primary-dark))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           light: "hsl(var(--secondary-light))",
+          dark: "hsl(var(--secondary-dark))",
         },
         accent: {
           DEFAULT: "hsl(var(--accent))",
           light: "hsl(var(--accent-light))",
+          dark: "hsl(var(--accent-dark))",
         },
         highlight: {
           DEFAULT: "hsl(var(--highlight))",
           light: "hsl(var(--highlight-light))",
+          dark: "hsl(var(--highlight-dark))",
         },
         background: "hsl(var(--background))",
       },
