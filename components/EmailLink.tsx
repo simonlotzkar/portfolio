@@ -68,7 +68,7 @@ const EmailLink: React.FC<EmailLinkProps> = ({ email, children }) => {
             {showPopup && (
                 <div
                     ref={popupRef}
-                    className="absolute left-1/2 transform -translate-x-1/2 mt-3 p-3 rounded shadow-lg bg-background flex items-center"
+                    className="absolute left-1/2 transform -translate-x-1/2 mt-3 p-3 rounded shadow-lg bg-primary-dark flex items-center"
                     style={{ zIndex: 1000 }}
                 >
                     {/* Textbox: Email. */}
@@ -77,12 +77,12 @@ const EmailLink: React.FC<EmailLinkProps> = ({ email, children }) => {
                         type="text"
                         value={email}
                         readOnly
-                        className="text-background text-sm px-2 py-1 border border-primary rounded w-auto"
+                        className="text-primary-dark text-sm px-2 py-1 border border-primary rounded w-auto"
                     />
                     {/* Button: Close popup. */}
                     <button
                         onClick={() => setShowPopup(false)}
-                        className="ml-2 px-2 py-1 text-background text-sm bg-highlight rounded hover:bg-highlight-light transition-colors"
+                        className="ml-2 px-2 py-1 text-primary-dark text-sm bg-highlight rounded hover:bg-highlight-light transition-colors"
                     >
                         {/* Icon: X. */}
                         <svg

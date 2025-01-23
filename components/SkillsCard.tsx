@@ -18,10 +18,11 @@ interface SkillsCardProps {
  */
 export const SkillsCard = ({ name, img }: SkillsCardProps) => {
     return (
-        <div className="w-24 h-24 flex flex-col items-center justify-center p-4 rounded-lg shadow-lg bg-primary text-center hover:bg-primary hover:scale-105 transition duration-300 group">
-            <div className="absolute inset-0 rounded-full max-w-[80%] h-auto translate-x-5 bg-primary-dark shadow-lg shadow-primary-dark "></div>
-            {/* Image: Represents the skill with an icon or logo */}
-            <img src={img} alt={name} className="max-w-[80%] h-auto object-contain mb-2 group-hover:scale-150" />
+        <div className="w-24 h-24 flex items-center justify-center p-4 rounded-lg bg-primary text-center shadow-xl shadow-primary-dark hover:bg-primary-dark z-30 hover:scale-105 transition duration-300 group">
+            <div className="">
+                {/* Image: Represents the skill with an icon or logo */}
+                <img src={img} alt={name} className="items-center flex justify-center object-contain group-hover:scale-150 z-10" />
+            </div>
         </div>
     );
 };
