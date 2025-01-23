@@ -1,5 +1,5 @@
 import React from 'react'
-import { SparklesCore } from './ui/sparkles'
+import { SparklesCore } from '../ui/sparkles'
 
 /**
  * Footer displays the website's name and the current date.

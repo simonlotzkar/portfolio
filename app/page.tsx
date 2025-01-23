@@ -21,9 +21,10 @@ export default function Page() {
               link,
               linkName,
               articleLink,
-            }
+            }, i
           ) => (
             <ProjectCard
+              key={i}
               title={title}
               subtitle={subtitle}
               date={date}
