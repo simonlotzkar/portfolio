@@ -51,7 +51,7 @@ export const ExperienceCard = ({ title, company, startDate, endDate, img, detail
                 <h3 className="py-1 text-ellipsis overflow-hidden whitespace-nowrap text-base font-semibold uppercase">{company}</h3>
             </div>
 
-            {/* Text: Project description. */}
+            {/* Text: Experience description. */}
             <ul className="list-disc pl-5 text-lg">
                 {details.map((line, index) => (
                     <li key={index} className="whitespace-normal overflow-wrap-break-word">
