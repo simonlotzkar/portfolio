@@ -2,7 +2,7 @@ import { SparklesCore } from "@/components/ui/sparkles";
 
 export default function NotFound() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-primary to-secondary text-center">
+    <div className="flex items-center justify-center min-h-screen w-full bg-gradient-to-r from-primary to-secondary text-center">
 
             {/* Effect: Random particles. */}
             <div className="w-full absolute inset-0 h-screen">
