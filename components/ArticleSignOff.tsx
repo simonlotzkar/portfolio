@@ -1,6 +1,6 @@
 import React from 'react'
 import ArticleContent from './ArticleContent'
-import { myName, myTitle } from "@/data/messages";
+import { myName, myTitle } from "@/data";
 
 interface ArticleSignOffProps {
     date: string;

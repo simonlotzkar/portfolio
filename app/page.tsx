@@ -1,7 +1,7 @@
 import IndexTitle from "@/components/IndexTitle";
 import ProjectCard from "@/components/ProjectCard";
 import IndexSection from "@/components/IndexSection";
-import { myProjects } from "@/data/messages";
+import { myProjects } from "@/data";
 
 export default function Page() {
   return (
@@ -11,7 +11,6 @@ export default function Page() {
         {myProjects.map(
           (
             {
-              className,
               title,
               subtitle,
               date,
@@ -29,7 +28,6 @@ export default function Page() {
               subtitle={subtitle}
               date={date}
               description={description}
-              className={className}
               img={img}
               hostedLink={hostedLink}
               githubLink={githubLink}
@@ -39,6 +37,9 @@ export default function Page() {
             />
           )
         )}
+      </IndexSection>
+      <IndexSection id="experience" title="Experience">
+
       </IndexSection>
     </>
   );

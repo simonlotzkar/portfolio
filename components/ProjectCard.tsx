@@ -2,17 +2,16 @@ import { cn } from '@/lib/utils';
 import React from 'react';
 
 interface ProjectCardProps {
-    className?: string;
     title: string;
-    subtitle?: string;
+    subtitle: string;
     description: string;
     img: string;
+    date: string;
     githubLink?: string;
     hostedLink?: string;
     link?: string;
     linkName?: string;
     articleLink?: string;
-    date?: string;
 }
 
 /**
@@ -24,21 +23,19 @@ interface ProjectCardProps {
  * @param {string} props.title - The title of the project.
  * @param {string} props.description - A brief description of the project.
  * @param {string} props.img - The URL of the project's image.
- * @param {string} [props.className] - Optional additional class names for the card container.
- * @param {string} [props.subtitle] - Optional subtitle for the project.
+ * @param {string} props.subtitle - Optional subtitle for the project.
+ * @param {string} props.date - Optional date of the project or when it was completed.
  * @param {string} [props.githubLink] - Optional URL to the project's GitHub repository.
  * @param {string} [props.hostedLink] - Optional URL to the live or hosted version of the project.
  * @param {string} [props.link] - Optional additional URL related to the project.
  * @param {string} [props.linkName] - Optional name for the additional link.
  * @param {string} [props.articleLink] - Optional URL to an article related to the project.
- * @param {string} [props.date] - Optional date of the project or when it was completed.
  *
  * @returns {JSX.Element} The rendered project card component.
  *
  * @author SimonLotzkar
  */
 export const ProjectCard = ({
-    className,
     title,
     subtitle,
     description,
@@ -63,20 +60,17 @@ export const ProjectCard = ({
     );
 
     return (
-        <div className={cn(
-            className,
-            "max-w-2xl w-4/5 flex flex-col"
-        )}>
+        <div className="max-w-2xl w-4/5 flex flex-col">
             {/* Section: Title, date, subtitle */}
             <div className="">
                 {/* Text: Project title and date. */}
                 <h2 className="truncate text-2xl tracking-wide font-bold text-accent flex flex-row justify-between ">
                     {title}
-                    {date && <span className="bg-primary px-2 py-1 ml-2 rounded-lg truncate text-base text-accent-light font-semibold uppercase">{date}</span>}
+                    <span className="bg-primary px-2 py-1 ml-2 rounded-lg truncate text-base text-accent-light font-semibold uppercase">{date}</span>
                 </h2>
 
                 {/* Text: Project subtitle. */}
-                {subtitle && <h3 className="py-1 truncate text-base font-semibold uppercase">{subtitle}</h3>}
+                <h3 className="py-1 truncate text-base font-semibold uppercase">{subtitle}</h3>
             </div>
 
             {/* Section: Description and image. */}
