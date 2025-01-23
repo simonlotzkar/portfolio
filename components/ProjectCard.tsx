@@ -46,10 +46,10 @@ export const ProjectCard = ({
     date,
 }: ProjectCardProps) => {
     {/* Button for links */ }
-    const LinkButton = ({ href, children }: { href: string; children: React.ReactNode }) => (
+    const LinkButton = ({ href, target, children }: { href: string; target?: string, children: React.ReactNode }) => (
         <a
             href={href}
-            target="_blank"
+            target={target}
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 bg-secondary-dark rounded-lg shadow hover:bg-secondary"
         >
@@ -86,7 +86,7 @@ export const ProjectCard = ({
 
                 {/* List Item: GitHub link. */}
                 {githubLink && (
-                    <LinkButton href={githubLink}>
+                    <LinkButton href={githubLink} target="_blank">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor"
@@ -101,7 +101,7 @@ export const ProjectCard = ({
 
                 {/* Link: Hosted site. */}
                 {hostedLink && (
-                    <LinkButton href={hostedLink}>
+                    <LinkButton href={hostedLink} target="_blank">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor"
@@ -116,7 +116,7 @@ export const ProjectCard = ({
 
                 {/* Link: Misc link. */}
                 {link && (
-                    <LinkButton href={link}>
+                    <LinkButton href={link} target="_blank">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor"
@@ -132,7 +132,7 @@ export const ProjectCard = ({
 
                 {/* Link: Article. */}
                 {articleLink && (
-                    <LinkButton href={articleLink}>
+                    <LinkButton href={articleLink} >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor"
