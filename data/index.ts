@@ -104,9 +104,9 @@ export const myEducation: Education[] = [
         title: "CST Diploma",
         school: "BC Institute of Technology",
         startDate: new Date("2023-09-01"),
-        endDate: new Date("2024-05-23"),
+        endDate: new Date("2025-05-23"),
         img: "/images/icons/bcit.png",
-        details: "Computer Systems Technology is a 2 year, 120 credit program. It focuses on the practical skills used in Software Engineering and the theory in Computer Science. Graduates are able to build Full-Stack Applications using Agile Methodologies, Relational Database Design, Object Oriented Programming, Data Structures, and Algorithms. They are also able to perform System Administration with education in Networking, Operating Systems, and Computer Architecture."
+        details: "Computer Systems Technology is a 2 year, 120 credit program. It focuses on the practical skills used in Software Engineering and the theory in Computer Science."
     }
 ];
 

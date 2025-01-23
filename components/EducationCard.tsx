@@ -23,27 +23,26 @@ interface EducationCardProps {
 export const EducationCard = ({ title, school, startDate, endDate, img, details }: EducationCardProps) => {
     return (
         <div className="max-w-2xl w-4/5 flex flex-col">
-            {/* Section: Title, date, subtitle */}
-            <div className="">
-                {/* Text: Project title and date. */}
-                <h2 className="truncate text-2xl tracking-wide font-bold text-accent flex flex-row justify-between ">
-                    {title}
-                    <span className="bg-primary px-2 py-1 ml-2 rounded-lg truncate text-base text-accent-light font-semibold uppercase">{startDate.toString()}</span>
-                </h2>
-
-                {/* Text: Project subtitle. */}
-                <h3 className="py-1 truncate text-base font-semibold uppercase">{school}</h3>
+            {/* Section: Title and date. */}
+            <div className="flex flex-row justify-between">
+                <h2 className="text-ellipsis overflow-hidden whitespace-nowrap text-2xl tracking-wide font-bold text-accent">{title}</h2>
+                <span className="bg-primary px-2 py-1 ml-2 rounded-lg text-ellipsis overflow-hidden whitespace-nowrap text-base text-accent-light font-semibold uppercase">{endDate.toLocaleDateString("en-US", { year: 'numeric', month: 'long' })}</span>
             </div>
 
-            {/* Section: Description and image. */}
-            {(details || img) && <div className="flex flex-col">
+            {/* Section: Company and image */}
+            <div className="flex flex-row items-center">
 
-                {/* Text: Project description. */}
-                {details && <p className="whitespace-normal overflow-wrap-break-word text-lg">{details}</p>}
+                {/* Image: Company image. */}
+                {img && <img src={img} alt={title} className="my-2 rounded-sm shadow-md border-2 border-slate-900 mr-2 w-10 h-auto object-cover" />}
 
-                {/* Image: Project image. */}
-                {img && <img src={img} alt={title} className="rounded-lg py-4 h-auto max-h-96 object-cover" />}
-            </div>}
+                {/* Text: Company name. */}
+                <h3 className="py-1 text-ellipsis overflow-hidden whitespace-nowrap text-base font-semibold uppercase">{school}</h3>
+            </div>
+
+            {/* Text: Project description. */}
+            <div className="whitespace-normal overflow-wrap-break-word">
+                {details}
+            </div>
         </div>
     );
 };
