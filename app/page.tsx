@@ -1,7 +1,10 @@
 import IndexTitle from "@/components/IndexTitle";
 import ProjectCard from "@/components/ProjectCard";
 import IndexSection from "@/components/IndexSection";
-import { myProjects } from "@/data";
+import { myEducation, myExperiences, myProjects, mySkills } from "@/data";
+import ExperienceCard from "@/components/ExperienceCard";
+import EducationCard from "@/components/EducationCard";
+import SkillsCard from "@/components/SkillsCard";
 
 export default function Page() {
   return (
@@ -39,9 +42,67 @@ export default function Page() {
           )
         )}
       </IndexSection>
-      <IndexSection id="experience" title="Experience">
-
+      <IndexSection id="experience" title="My Experience">
+        {myExperiences.map(
+          (
+            {
+              title,
+              company,
+              startDate,
+              endDate,
+              details,
+              img,
+            }, i
+          ) => (
+            <ExperienceCard
+              key={i}
+              title={title}
+              company={company}
+              startDate={startDate}
+              endDate={endDate}
+              details={details}
+              img={img}
+            />
+          )
+        )}
       </IndexSection>
+      <IndexSection id="education" title="My Education">
+        {myEducation.map(
+          (
+            {
+              title,
+              school,
+              startDate,
+              endDate,
+              details,
+              img,
+            }, i
+          ) => (
+            <EducationCard
+              key={i}
+              title={title}
+              school={school}
+              startDate={startDate}
+              endDate={endDate}
+              details={details}
+              img={img}
+            />
+          )
+        )}
+      </IndexSection>
+      <IndexSection id="skills" title="My Skills">
+        <div className="max-w-2xl flex flex-wrap gap-1">
+          {mySkills.map(({ name, img, }, i) => (<SkillsCard key={i} name={name} img={img} />))}
+        </div>
+      </IndexSection>
+      <a
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="my-10 w-1/6 h-auto p-4 bg-secondary-dark rounded-lg shadow hover:bg-secondary"
+      >
+        My Resume
+      </a>
     </>
   );
 }

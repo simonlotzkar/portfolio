@@ -15,8 +15,6 @@ interface ProjectCardProps {
 
 /**
  * Displays a project card with a title, description, image, and optional links.
- * The layout is horizontal (image next to text) on small screens and above,
- * and vertical (image on top of text) on smaller screens.
  *
  * @param {Object} props - The properties object.
  * @param {string} props.title - The title of the project.
@@ -24,11 +22,11 @@ interface ProjectCardProps {
  * @param {string} props.img - The URL of the project's image.
  * @param {string} props.subtitle - Optional subtitle for the project.
  * @param {string} props.date - Optional date of the project or when it was completed.
- * @param {string} [props.githubLink] - Optional URL to the project's GitHub repository.
- * @param {string} [props.hostedLink] - Optional URL to the live or hosted version of the project.
- * @param {string} [props.link] - Optional additional URL related to the project.
- * @param {string} [props.linkName] - Optional name for the additional link.
- * @param {string} [props.articleLink] - Optional URL to an article related to the project.
+ * @param {string} props.githubLink - Optional URL to the project's GitHub repository.
+ * @param {string} props.hostedLink - Optional URL to the live or hosted version of the project.
+ * @param {string} props.link - Optional additional URL related to the project.
+ * @param {string} props.linkName - Optional name for the additional link.
+ * @param {string} props.articleLink - Optional URL to an article related to the project.
  *
  * @returns {JSX.Element} The rendered project card component.
  *
