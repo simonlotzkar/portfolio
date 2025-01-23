@@ -11,11 +11,11 @@ import { myName, myTitle } from "@/data/messages"
  * The main text is faded in using a text-generate effect.
  *
  * @component
- * @returns {JSX.Element} The rendered LandingTitle component.
+ * @returns {JSX.Element} The rendered IndexTitle component.
  *
  * @author SimonLotzkar
  */
-const LandingTitle = () => {
+const IndexTitle = () => {
     return (
         <section id="title" className="w-full flex items-center justify-center min-h-screen bg-gradient-to-r from-primary to-secondary text-center">
 
@@ -95,4 +95,4 @@ const LandingTitle = () => {
     )
 }
 
-export default LandingTitle
+export default IndexTitle

@@ -9,7 +9,7 @@ interface ArticleContentProps {
 }
 
 /**
- * Displays a distinct part of content in an article. 
+ * Displays a distinct part of content in an article.
  * Can have a title, image, and image caption.
  *
  * @component
