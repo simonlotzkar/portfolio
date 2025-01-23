@@ -118,142 +118,142 @@ interface Skill {
 export const mySkills: Skill[] = [
     {
         name: "Firestore",
-        img: "/images/icons/firestore.png"
+        img: "/images/icons/firestore.svg"
     },
     {
         name: "MongoDB",
-        img: "/images/icons/mongodb.png"
+        img: "/images/icons/mongo.svg"
     },
     {
         name: "MySQL",
-        img: "/images/icons/mysql.png"
+        img: "/images/icons/mysql.svg"
     },
     {
         name: "SQLite",
-        img: "/images/icons/sqlite.png"
+        img: "/images/icons/sqlite.svg"
     },
     {
         name: "TypeScript",
-        img: "/images/icons/typescript.png"
+        img: "/images/icons/typescript.svg"
     },
     {
         name: "JavaScript",
-        img: "/images/icons/javascript.png"
+        img: "/images/icons/javascript.svg"
     },
     {
         name: "Java",
-        img: "/images/icons/java.png"
+        img: "/images/icons/java.svg"
     },
     {
         name: "Kotlin",
-        img: "/images/icons/kotlin.png"
+        img: "/images/icons/kotlin.svg"
     },
     {
         name: "C#",
-        img: "/images/icons/csharp.png"
+        img: "/images/icons/csharp.svg"
     },
     {
         name: "C++",
-        img: "/images/icons/cpp.png"
+        img: "/images/icons/cplusplus.svg"
     },
     {
         name: "C",
-        img: "/images/icons/c.png"
+        img: "/images/icons/c.svg"
     },
     {
         name: "SQL",
-        img: "/images/icons/sql.png"
+        img: "/images/icons/sql.svg"
     },
     {
         name: "R",
-        img: "/images/icons/r.png"
+        img: "/images/icons/r.svg"
     },
     {
         name: "HTML",
-        img: "/images/icons/html.png"
+        img: "/images/icons/html.svg"
     },
     {
         name: "CSS",
-        img: "/images/icons/css.png"
+        img: "/images/icons/css.svg"
     },
     {
         name: "React",
-        img: "/images/icons/react.png"
+        img: "/images/icons/react.svg"
     },
     {
         name: "Next.js",
-        img: "/images/icons/nextjs.png"
+        img: "/images/icons/nextjs.svg"
     },
     {
         name: "Node.js",
-        img: "/images/icons/nodejs.png"
+        img: "/images/icons/nodejs.svg"
     },
     {
         name: ".NET",
-        img: "/images/icons/dotnet.png"
+        img: "/images/icons/dotnet.svg"
     },
     {
-        name: "Express",
-        img: "/images/icons/express.png"
+        name: "Express.js",
+        img: "/images/icons/expressjs.svg"
     },
     {
         name: "Tailwind",
-        img: "/images/icons/tailwind.png"
+        img: "/images/icons/tailwind.svg"
     },
     {
         name: "Bootstrap",
-        img: "/images/icons/bootstrap.png"
+        img: "/images/icons/bootstrap.svg"
     },
     {
         name: "JUnit",
-        img: "/images/icons/junit.png"
+        img: "/images/icons/junit.svg"
     },
     {
         name: "Linux",
-        img: "/images/icons/linux.png"
+        img: "/images/icons/linux.svg"
     },
     {
         name: "Git",
-        img: "/images/icons/git.png"
+        img: "/images/icons/git.svg"
     },
     {
         name: "Docker",
-        img: "/images/icons/docker.png"
+        img: "/images/icons/docker.svg"
     },
     {
         name: "Firebase",
-        img: "/images/icons/firebase.png"
+        img: "/images/icons/firebase.svg"
     },
     {
         name: "Azure",
-        img: "/images/icons/azure.png"
+        img: "/images/icons/azure.svg"
     },
     {
         name: "Postman",
-        img: "/images/icons/postman.png"
+        img: "/images/icons/postman.svg"
     },
     {
         name: "VSCode",
-        img: "/images/icons/vscode.png"
+        img: "/images/icons/vscode.svg"
     },
     {
         name: "Android Studio",
-        img: "/images/icons/androidstudio.png"
+        img: "/images/icons/android.svg"
     },
     {
         name: "IntelliJ",
-        img: "/images/icons/intellij.png"
+        img: "/images/icons/intellij.svg"
     },
     {
         name: "CLion",
-        img: "/images/icons/clion.png"
+        img: "/images/icons/clion.svg"
     },
     {
         name: "Eclipse",
-        img: "/images/icons/eclipse.png"
+        img: "/images/icons/eclipse.svg"
     },
     {
         name: "RStudio",
-        img: "/images/icons/rstudio.png"
+        img: "/images/icons/rstudio.svg"
     }
 ];

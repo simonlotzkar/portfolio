@@ -6,11 +6,11 @@ interface SkillsCardProps {
 }
 
 /**
- * Displays a skills card with a name and image.
+ * Displays a small card representing a skill with a name and image.
  *
  * @param {Object} props - The properties object.
- * @param {string} props.name - The name of the skill.
- * @param {string} props.image - An image of the skill.
+ * @param {string} props.name - The name of the skill
+ * @param {string} props.img - The URL of the image representing the skill
  *
  * @returns {JSX.Element} The rendered SkillsCard component.
  *
@@ -18,9 +18,12 @@ interface SkillsCardProps {
  */
 export const SkillsCard = ({ name, img }: SkillsCardProps) => {
     return (
-        <div className="w-10 h-auto flex flex-col">
-            <img src={img} alt={name} className="h-auto object-cover" />
-            <h6>{name}</h6>
+        <div className="w-24 h-24 flex flex-col items-center justify-center p-4 rounded-lg shadow-lg bg-primary text-center hover:bg-primary-light transition duration-300">
+            {/* Image: Represents the skill with an icon or logo */}
+            <img src={img} alt={name} className="max-w-[80%] h-auto object-contain mb-2" />
+
+            {/* Text: The name of the skill */}
+            <h6 className="text-sm font-semibold">{name}</h6>
         </div>
     );
 };
