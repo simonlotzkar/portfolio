@@ -1,8 +1,9 @@
 import React from "react";
+import Image from "next/image";
 
 const getWorkPeriodString = (start: Date, end?: Date) => {
-    let years = start.getFullYear() - (end ? end.getFullYear() : new Date().getFullYear());
-    let months = start.getMonth() - (end ? end.getMonth() : new Date().getMonth()) + years * 12;
+    const years = start.getFullYear() - (end ? end.getFullYear() : new Date().getFullYear());
+    const months = start.getMonth() - (end ? end.getMonth() : new Date().getMonth()) + years * 12;
 
     return `${Math.abs(months)} months`;
 };
@@ -45,7 +46,7 @@ export const ExperienceCard = ({ title, company, startDate, endDate, img, detail
             <div className="flex flex-row items-center">
 
                 {/* Image: Company image. */}
-                {img && <img src={img} alt={title} className="my-2 rounded-sm shadow-md border-2 border-slate-900 mr-2 w-10 h-auto object-cover" />}
+                {img && <Image width="30" height="30" src={img} alt={title} className="my-2 rounded-sm shadow-md border-2 border-slate-900 mr-2 w-10 h-auto object-cover" />}
 
                 {/* Text: Company name. */}
                 <h3 className="py-1 text-ellipsis overflow-hidden whitespace-nowrap text-base font-semibold uppercase">{company}</h3>

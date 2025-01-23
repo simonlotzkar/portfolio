@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface ArticleContentProps {
     children?: React.ReactNode;
@@ -36,7 +37,7 @@ const ArticleContent: React.FC<ArticleContentProps> = ({ children, title, img, a
             {/* Optional image: Content image. */}
             {img && (
                 <div className="flex flex-col items-center pt-4">
-                    <img
+                    <Image width="700" height="300"
                         src={img}
                         alt={alt || title + " image" || "Article image"}
                         className="shadow-2xl rounded-lg w-xl h-auto max-h-96 object-cover"

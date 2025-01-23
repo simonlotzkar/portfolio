@@ -48,7 +48,7 @@ export const myProjects: Project[] = [
         title: "Autoblocks",
         subtitle: "School Project",
         date: "2022, Sept-Dec",
-        description: "for Dungeons and Dragons 5th Edition by Wizards of the Coast. This is a tool for dungeon and dragons (D&D) dungeon masters (DMs) to automate non player characters (NPCs).",
+        description: "for Dungeons and Dragons 5th Edition by Wizards of the Coast. This is a tool for dungeon and dragons (D\&D) dungeon masters (DMs) to automate non player characters (NPCs).",
         img: "/images/autoblocks/autoblocks-home.png",
         githubLink: "https://github.com/simonlotzkar/autoblocks",
         articleLink: "/articles/autoblocks",
@@ -145,11 +145,11 @@ export const mySkills: Skill[] = [
         img: "/images/icons/kotlin.svg"
     },
     {
-        name: "C#",
+        name: "C\#",
         img: "/images/icons/csharp.svg"
     },
     {
-        name: "C++",
+        name: "C\+\+",
         img: "/images/icons/cplusplus.svg"
     },
     {

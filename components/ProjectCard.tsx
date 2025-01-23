@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface ProjectCardProps {
     title: string;
@@ -77,7 +78,7 @@ export const ProjectCard = ({
                 <p className="whitespace-normal overflow-wrap-break-word text-lg">{description}</p>
 
                 {/* Image: Project image. */}
-                <img src={img} alt={title} className="rounded-lg py-4 h-auto max-h-96 object-cover"/>
+                <Image width="700" height="300" src={img} alt={title} className="rounded-lg py-4 h-auto max-h-96 object-cover"/>
             </div>
 
             {/* Section: Project links. */}
