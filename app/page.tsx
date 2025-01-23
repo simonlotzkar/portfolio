@@ -42,7 +42,7 @@ export default function Page() {
           )
         )}
       </IndexSection>
-      <IndexSection id="experience" title="My Experience">
+      <IndexSection id="experience" title="Experience">
         {myExperiences.map(
           (
             {

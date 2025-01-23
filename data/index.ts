@@ -67,7 +67,7 @@ interface Experience {
 export const myExperiences: Experience[] = [
     {
         title: "Systems Analyst",
-        company: "British Columbia Institute of Technology",
+        company: "BC Institute of Technology",
         startDate: new Date("2024-06-01"),
         img: "/images/icons/bcit.png",
         details: [
@@ -79,7 +79,7 @@ export const myExperiences: Experience[] = [
         ]
     },
     {
-        title: "Private Contractor",
+        title: "Contractor",
         company: "Kingston Geosciences",
         startDate: new Date("2023-06-01"),
         endDate: new Date("2023-08-31"),
@@ -101,12 +101,12 @@ interface Education {
 }
 export const myEducation: Education[] = [
     {
-        title: "Computer Systems Technology (CST) Diploma",
-        school: "British Columbia Institute of Technology",
+        title: "CST Diploma",
+        school: "BC Institute of Technology",
         startDate: new Date("2023-09-01"),
         endDate: new Date("2024-05-23"),
         img: "/images/icons/bcit.png",
-        details: "CST is a 2 year, 120 credit program. It focuses on the practical skills used in Software Engineering and the theory in Computer Science. Graduates are able to build Full-Stack Applications using Agile Methodologies, Relational Database Design, Object Oriented Programming, Data Structures, and Algorithms. They are also able to perform System Administration with education in Networking, Operating Systems, and Computer Architecture."
+        details: "Computer Systems Technology is a 2 year, 120 credit program. It focuses on the practical skills used in Software Engineering and the theory in Computer Science. Graduates are able to build Full-Stack Applications using Agile Methodologies, Relational Database Design, Object Oriented Programming, Data Structures, and Algorithms. They are also able to perform System Administration with education in Networking, Operating Systems, and Computer Architecture."
     }
 ];
 
