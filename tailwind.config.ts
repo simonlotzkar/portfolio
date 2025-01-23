@@ -25,20 +25,6 @@ const config = {
         },
       },
       colors: {
-        black: {
-          DEFAULT: "#000",
-          950: "#0a0a0a",
-          900: "#171717",
-          800: "#262626",
-          700: "#404040",
-        },
-        white: {
-          DEFAULT: "#FFF",
-          50: "#FAFAFA",
-          100: "#F5F5F5",
-          200: "#E5E5E5",
-          300: "#D4D4D4",
-        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           light: "hsl(var(--primary-light))",
@@ -58,8 +44,7 @@ const config = {
           DEFAULT: "hsl(var(--highlight))",
           light: "hsl(var(--highlight-light))",
           dark: "hsl(var(--highlight-dark))",
-        },
-        background: "hsl(var(--background))",
+        }
       },
       borderRadius: {
         lg: "var(--radius)",

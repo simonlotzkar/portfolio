@@ -28,7 +28,7 @@
   }
 
   body {
-    @apply bg-primary-light;
+    @apply bg-primary-dark;
   }
 
   section {
