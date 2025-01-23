@@ -91,7 +91,7 @@ export default function Page() {
         )}
       </IndexSection>
       <IndexSection id="skills" title="My Skills">
-        <div className="max-w-2xl max-w-[80%] flex flex-wrap gap-1 justify-center items-center">
+        <div className="lg:max-w-2xl max-w-[80%] flex flex-wrap gap-1 justify-center items-center">
           {mySkills.map(({ name, img, }, i) => (<SkillsCard key={i} name={name} img={img} />))}
         </div>
       </IndexSection>
@@ -99,7 +99,7 @@ export default function Page() {
         href="/resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="my-10 w-1/6 h-auto p-4 bg-secondary-dark rounded-lg shadow hover:bg-secondary"
+        className="text-center rounded-full uppercase tracking-widest font-semibold my-10 w-[66%] sm:w-[33%] lg:w-[20%] h-auto p-4 bg-secondary-dark shadow-xl hover:bg-secondary hover:scale-105"
       >
         My Resume
       </a>

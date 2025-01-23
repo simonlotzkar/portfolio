@@ -117,10 +117,6 @@ interface Skill {
 }
 export const mySkills: Skill[] = [
     {
-        name: "Firestore",
-        img: "/images/icons/firestore.svg"
-    },
-    {
         name: "MongoDB",
         img: "/images/icons/mongo.svg"
     },
@@ -213,10 +209,6 @@ export const mySkills: Skill[] = [
         img: "/images/icons/linux.svg"
     },
     {
-        name: "Git",
-        img: "/images/icons/git.svg"
-    },
-    {
         name: "Docker",
         img: "/images/icons/docker.svg"
     },
@@ -252,8 +244,4 @@ export const mySkills: Skill[] = [
         name: "Eclipse",
         img: "/images/icons/eclipse.svg"
     },
-    {
-        name: "RStudio",
-        img: "/images/icons/rstudio.svg"
-    }
 ];
