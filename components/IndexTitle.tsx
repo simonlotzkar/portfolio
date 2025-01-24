@@ -20,43 +20,41 @@ const IndexTitle = () => {
         <section id="title" className="w-full flex items-center justify-center min-h-screen bg-gradient-to-r from-primary to-secondary text-center">
 
             {/* Effect: Random particles. */}
-            <div className="w-full absolute inset-0 h-screen">
-                <SparklesCore
-                    id="tsparticlesfullpage"
-                    background="transparent"
-                    minSize={0.6}
-                    maxSize={1.4}
-                    particleDensity={20}
-                    className="w-full h-full"
-                    particleColor="#FFFFFF" />
-            </div>
+            <SparklesCore
+                id="tsparticlesfullpage"
+                background="transparent"
+                minSize={0.6}
+                maxSize={1.4}
+                particleDensity={20}
+                className="w-screen absolute inset-0 h-screen"
+                particleColor="#FFFFFF" />
 
-            {/* Section: Main content. */}
-            <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] z-10">
+            {/* Section: Social links and down arrow. */}
+            <div className="w-4/5 2xl:w-2/3 z-10">
 
                 {/* Image: GitHub Avatar */}
                 <div className="flex justify-center mb-6">
                     <img
                         src="https://github.com/simonlotzkar.png"
                         alt="GitHub Profile"
-                        className="border-4 border-primary w-32 h-32 rounded-full shadow-lg"
+                        className="border-4 border-primary w-1/3 2xl:w-1/6 h-auto rounded-full shadow-lg"
                     />
                 </div>
 
                 {/* FadeInText: My Name. */}
                 <TextGenerateEffect
-                    className="uppercase text-center text-[40px] md:text-5xl lg:text-6l tracking-widest font-bold mb-4"
+                    className="uppercase text-center text-3xl md:text-4xl 2xl:text-7xl tracking-widest font-bold mb-4"
                     words={myName}
                     duration={0} />
 
                 {/* FadeInText: My Title. */}
                 <TextGenerateEffect
-                    className="text-center text-sm md:text-lg lg:text-2xl tracking-wider font-light mb-4"
+                    className="text-center text-md md:text-lg 2xl:text-4xl tracking-wider font-light mb-4"
                     words={myTitle}
                     duration={0} />
 
                 {/* Section: Contact links. */}
-                <div className="flex justify-center space-x-6 mt-8">
+                <div className="flex justify-center space-x-6 2xl:space-x-12 mt-8 2xl:mt-12">
 
                     {/* PopupButton: Email. */}
                     <EmailLink email="simonlotzkar@gmail.com">
@@ -81,11 +79,11 @@ const IndexTitle = () => {
                 </div>
 
                 {/* Section: Button to scroll to Projects. */}
-                <div className="flex justify-center items-center mt-16">
+                <div className="flex justify-center items-center mt-12 2xl:mt-16">
 
                     {/* Button: Scroll to Projects. */}
-                    <a href="#projects" className="flex items-center justify-center w-10 h-10 border-2 rounded-full shadow-lg border-accent-light hover:bg-secondary transition duration-300">
-                        <svg fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+                    <a href="#projects" className="flex items-center justify-center w-10 md:w-14 2xl:w-20 h-10 md:h-14 2xl:h-20 border-2 md:border-4 2xl:border-6 rounded-full shadow-lg border-accent-light hover:bg-secondary transition">
+                        <svg fill="currentColor" viewBox="0 0 24 24" className="w-8 md:w-12 2xl:w-18 h-auto">
                             <path d="M12 16.5l-8-8h16l-8 8z" />
                         </svg>
                     </a>

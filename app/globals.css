@@ -25,6 +25,7 @@
 
   * {
     @apply border-accent text-accent-light !scroll-smooth focus:outline-none;
+    transition-duration: 30;
   }
 
   body {
