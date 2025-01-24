@@ -28,21 +28,29 @@ interface EducationCardProps {
 export const EducationCard = ({ title, school, startDate, endDate, img, details }: EducationCardProps) => {
     return (
         <div className="w-full flex flex-col">
+
             {/* Section: Title and date. */}
-            <div className="flex flex-row justify-between">
-                <h2 className="text-ellipsis overflow-hidden whitespace-nowrap text-2xl tracking-wide font-bold text-accent">{title}</h2>
-                <span className="bg-primary px-2 py-1 ml-2 rounded-lg text-ellipsis overflow-hidden whitespace-nowrap text-base text-accent-light font-semibold uppercase">{endDate.toLocaleDateString("en-US", { year: 'numeric', month: 'long' })}</span>
-                <span className="hidden">{startDate.toLocaleDateString("en-US", { year: 'numeric', month: 'long' })}</span>
+            <div className="flex flex-col sm:flex-row sm:justify-between">
+
+                {/* Title */}
+                <h2 className="truncate text-2xl tracking-wide font-bold text-accent">{title}</h2>
+
+                {/* Dates */}
+                <span className="w-fit max-w-full bg-primary px-2 my-1 sm:my-0 py-1 sm:ml-2 rounded-lg truncate text-base font-semibold uppercase background-lg">
+                    {startDate.toLocaleDateString("en-US", { year: 'numeric', month: 'long' })}
+                    {" - "}
+                    {endDate.toLocaleDateString("en-US", { year: 'numeric', month: 'long' })}
+                </span>
             </div>
 
             {/* Section: School name and image */}
-            <div className="flex flex-row items-center">
+            <div className="flex flex-row items-center my-1 sm:my-2">
 
                 {/* Image: School image. */}
-                {img && <Image width="30" height="30" src={img} alt={title} className="my-2 rounded-sm shadow-md border-2 border-slate-900 mr-2 w-10 h-auto object-cover" />}
+                {img && <Image width="64" height="64" src={img} alt={title} className="rounded-sm mr-2 h-8 w-auto border-2 border-slate-900"/>}
 
                 {/* Text: School name. */}
-                <h3 className="py-1 text-ellipsis overflow-hidden whitespace-nowrap text-base font-semibold uppercase">{school}</h3>
+                <h3 className="truncate leading-8 font-semibold uppercase">{school}</h3>
             </div>
 
             {/* Text: Education description. */}

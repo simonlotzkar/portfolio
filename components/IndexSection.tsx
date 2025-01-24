@@ -23,11 +23,13 @@ interface IndexSectionProps {
  */
 const IndexSection: React.FC<IndexSectionProps> = ({ id, title, children, className }) => {
   return (
-    <section id={id} className={`${className ? `${className }` : ""}lg:max-w-2xl w-[80%] space-y-10 flex flex-col items-center pt-10`}>
+    <section id={id} className={`${className ? `${className }` : ""}w-full flex flex-col items-center pt-5 pb-10`}>
       {/* Text: Title */}
       <h1 className="text-4xl font-semibold text-center text-secondary">{title}</h1>
       {/* Section: Children */}
+      <div className="lg:max-w-2xl w-[80%] space-y-5 flex flex-col items-center pt-5">
       {children}
+      </div>
     </section>
   );
 };

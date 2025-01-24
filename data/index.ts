@@ -67,7 +67,7 @@ interface Experience {
 export const myExperiences: Experience[] = [
     {
         title: "Systems Analyst",
-        company: "BC Institute of Technology",
+        company: "British Columbia Institute of Technology",
         startDate: new Date("2024-06-01"),
         img: "/images/icons/bcit.png",
         details: [
@@ -102,7 +102,7 @@ interface Education {
 export const myEducation: Education[] = [
     {
         title: "CST Diploma",
-        school: "BC Institute of Technology",
+        school: "British Columbia Institute of Technology",
         startDate: new Date("2023-09-01"),
         endDate: new Date("2025-05-23"),
         img: "/images/icons/bcit.png",
