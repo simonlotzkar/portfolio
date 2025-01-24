@@ -26,7 +26,7 @@ const IndexTitle = () => {
                 minSize={0.6}
                 maxSize={1.4}
                 particleDensity={20}
-                className="w-screen absolute inset-0 h-screen"
+                className="w-full absolute inset-0 h-screen"
                 particleColor="#FFFFFF" />
 
             {/* Section: Social links and down arrow. */}

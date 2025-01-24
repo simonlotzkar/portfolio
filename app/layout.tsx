@@ -24,7 +24,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
-        <main className="w-screen relative flex justify-center items-center flex-col">
+        <main className="w-full relative flex justify-center items-center flex-col">
           {children}
         </main>
         <Footer />
