@@ -37,19 +37,19 @@ const IndexTitle = () => {
                     <img
                         src="https://github.com/simonlotzkar.png"
                         alt="GitHub Profile"
-                        className="border-4 border-primary w-1/3 2xl:w-1/6 h-auto rounded-full shadow-lg"
+                        className="border-4 border-primary w-32 lg:w-1/6 h-auto rounded-full shadow-lg"
                     />
                 </div>
 
                 {/* FadeInText: My Name. */}
                 <TextGenerateEffect
-                    className="uppercase text-center text-3xl md:text-4xl 2xl:text-7xl tracking-widest font-bold mb-4"
+                    className="uppercase text-center text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl tracking-widest font-bold mb-4"
                     words={myName}
                     duration={0} />
 
                 {/* FadeInText: My Title. */}
                 <TextGenerateEffect
-                    className="text-center text-md md:text-lg 2xl:text-4xl tracking-wider font-light mb-4"
+                    className="text-center text-md md:text-lg 2xl:text-3xl tracking-wider font-light mb-4"
                     words={myTitle}
                     duration={0} />
 
@@ -82,7 +82,7 @@ const IndexTitle = () => {
                 <div className="flex justify-center items-center mt-12 2xl:mt-16">
 
                     {/* Button: Scroll to Projects. */}
-                    <a href="#projects" className="flex items-center justify-center w-10 md:w-14 2xl:w-20 h-10 md:h-14 2xl:h-20 border-2 md:border-4 2xl:border-6 rounded-full shadow-lg border-accent-light hover:bg-secondary transition">
+                    <a href="#projects" className="flex items-center justify-center w-10 md:w-14 2xl:w-16 h-10 md:h-14 2xl:h-16 border-2 md:border-4 2xl:border-6 rounded-full shadow-lg border-accent-light hover:bg-secondary transition">
                         <svg fill="currentColor" viewBox="0 0 24 24" className="w-8 md:w-12 2xl:w-18 h-auto">
                             <path d="M12 16.5l-8-8h16l-8 8z" />
                         </svg>

@@ -58,7 +58,7 @@ export const ProjectCard = ({
     );
 
     return (
-        <div className="max-w-2xl w-4/5 flex flex-col">
+        <div className="w-full flex flex-col">
             {/* Section: Title, date, subtitle */}
             <div className="">
                 {/* Text: Project title and date. */}
@@ -72,13 +72,13 @@ export const ProjectCard = ({
             </div>
 
             {/* Section: Description and image. */}
-            <div className="flex flex-col">
+            <div className="flex flex-col items-center">
 
                 {/* Text: Project description. */}
-                <p className="whitespace-normal overflow-wrap-break-word text-lg">{description}</p>
+                <p className="whitespace-normal overflow-wrap-break-word text-lg text-left w-full">{description}</p>
 
                 {/* Image: Project image. */}
-                <Image width="700" height="300" src={img} alt={title} className="rounded-lg py-4 h-auto max-h-96 object-cover"/>
+                <Image width="700" height="300" src={img} alt={title} className="rounded-lg py-4 object-cover"/>
             </div>
 
             {/* Section: Project links. */}

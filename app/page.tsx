@@ -91,7 +91,7 @@ export default function Page() {
         )}
       </IndexSection>
       <IndexSection id="skills" title="My Skills">
-        <div className="lg:max-w-2xl max-w-[80%] flex flex-wrap gap-1 justify-center items-center">
+        <div className="flex flex-wrap gap-1 w-full items-center justify-center">
           {mySkills.map(({ name, img, }, i) => (<SkillsCard key={i} name={name} img={img} />))}
         </div>
       </IndexSection>

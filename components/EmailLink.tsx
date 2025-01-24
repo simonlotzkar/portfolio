@@ -60,7 +60,7 @@ const EmailLink: React.FC<EmailLinkProps> = ({ email, children }) => {
             {/* Button: When clicked, creates the popup. Wraps children. Rotates on hover. */}
             <div
                 onClick={handleClick}
-                className="cursor-pointer w-10 md:w-14 2xl:w-20 h-auto transform transition-transform hover:scale-110 hover:rotate-6"
+                className="cursor-pointer w-10 md:w-14 2xl:w-16 h-auto transform transition-transform hover:scale-110 hover:rotate-6"
             >
                 {children}
             </div>

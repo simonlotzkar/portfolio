@@ -35,7 +35,7 @@ interface ExperienceCardProps {
  */
 export const ExperienceCard = ({ title, company, startDate, endDate, img, details }: ExperienceCardProps) => {
     return (
-        <div className="max-w-2xl w-4/5 flex flex-col">
+        <div className="w-full flex flex-col">
             {/* Section: Title and date. */}
             <div className="flex flex-row justify-between">
                 <h2 className="text-ellipsis overflow-hidden whitespace-nowrap text-2xl tracking-wide font-bold text-accent">{title}</h2>
