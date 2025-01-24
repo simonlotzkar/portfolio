@@ -1,11 +1,16 @@
 import React from "react";
 import Image from "next/image";
 
-const getWorkPeriodString = (start: Date, end?: Date) => {
-    const years = start.getFullYear() - (end ? end.getFullYear() : new Date().getFullYear());
-    const months = start.getMonth() - (end ? end.getMonth() : new Date().getMonth()) + years * 12;
+export const getDatePeriodString = (start: Date, end?: Date) => {
+    const target = end || new Date();
 
-    return `${Math.abs(months)} months`;
+    if (!end) {
+        return `${start.toLocaleDateString("en-US", { year: "numeric", month: "short" })} - Present`;
+    } else if (target.getFullYear() === start.getFullYear()) {
+        return `${start.toLocaleDateString("en-US", { month: "short" })} - ${end.toLocaleDateString("en-US", { year: "numeric", month: "short" })}`;
+    } else {
+        return `${start.toLocaleDateString("en-US", { year: "numeric", month: "short" })} - ${end.toLocaleDateString("en-US", { year: "numeric", month: "short" })}`;
+    }
 };
 
 interface ExperienceCardProps {
@@ -39,7 +44,7 @@ export const ExperienceCard = ({ title, company, startDate, endDate, img, detail
             {/* Section: Title and date. */}
             <div className="flex flex-row justify-between">
                 <h2 className="text-ellipsis overflow-hidden whitespace-nowrap text-2xl tracking-wide font-bold text-accent">{title}</h2>
-                <span className="bg-primary px-2 py-1 ml-2 rounded-lg text-ellipsis overflow-hidden whitespace-nowrap text-base text-accent-light font-semibold uppercase">{getWorkPeriodString(startDate, endDate)}</span>
+                <span className="bg-primary px-2 py-1 ml-2 rounded-lg text-ellipsis overflow-hidden whitespace-nowrap text-base text-accent-light font-semibold uppercase">{getDatePeriodString(startDate, endDate)}</span>
             </div>
 
             {/* Section: Company and image */}

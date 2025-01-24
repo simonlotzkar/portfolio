@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import {getDatePeriodString} from "./ExperienceCard";
 
 interface EducationCardProps {
     title: string;
@@ -37,9 +38,7 @@ export const EducationCard = ({ title, school, startDate, endDate, img, details 
 
                 {/* Dates */}
                 <span className="w-fit max-w-full bg-primary px-2 my-1 sm:my-0 py-1 sm:ml-2 rounded-lg truncate text-base font-semibold uppercase background-lg">
-                    {startDate.toLocaleDateString("en-US", { year: 'numeric', month: 'long' })}
-                    {" - "}
-                    {endDate.toLocaleDateString("en-US", { year: 'numeric', month: 'long' })}
+                    {getDatePeriodString(startDate, endDate)}
                 </span>
             </div>
 
