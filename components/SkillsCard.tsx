@@ -19,7 +19,7 @@ interface SkillsCardProps {
  */
 export const SkillsCard = ({ name, img }: SkillsCardProps) => {
     return (
-        <div className="w-24 h-24 flex items-center justify-center p-4 rounded-lg bg-primary text-center shadow-xl shadow-primary-dark hover:bg-primary-dark z-30 hover:scale-105 transition duration-300 group">
+        <div className="w-24 h-24 flex items-center justify-center p-4 rounded-lg bg-primary text-center shadow-xl shadow-primary-dark hover:bg-primary-dark z-30 hover:scale-105 transition group">
             <div className="">
                 {/* Image: Represents the skill with an icon or logo */}
                 <Image width="100" height="100" src={img} alt={name} className="items-center flex justify-center object-contain group-hover:scale-150 z-10" />

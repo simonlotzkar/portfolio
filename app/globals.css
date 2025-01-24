@@ -24,8 +24,7 @@
   }
 
   * {
-    @apply border-accent text-accent-light !scroll-smooth focus:outline-none;
-    transition-duration: 30;
+    @apply border-accent text-accent-light !scroll-smooth focus:outline-none duration-300;
   }
 
   body {
