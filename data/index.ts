@@ -2,6 +2,13 @@
 export const myName = "Simon Lotzkar";
 export const myTitle = "Software Developer (Vancouver, BC)";
 
+// Metadata
+export const siteTitle = `${myName} | Portfolio`;
+export const siteDescription = "Simon Lotzkar's portfolio and digital resume. Showcases various projects and articles on their creation. Includes contact details and additional professional information.";
+export const siteURL = "simonlotzkar.com";
+export const siteThumbnailPath = "/site-thumbnail.png";
+export const siteThumbnailAlt = "Thumbnail of website title screen displaying 'Simon Lotzkar' and his profile picture.";
+
 // Projects
 interface Project {
     title: string;
