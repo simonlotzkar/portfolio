@@ -40,7 +40,7 @@ const ArticleContent: React.FC<ArticleContentProps> = ({ children, title, img, a
                     <Image width="700" height="300"
                         src={img}
                         alt={alt || title + " image" || "Article image"}
-                        className="shadow-2xl rounded-lg w-xl h-auto max-h-96 object-cover"
+                        className="shadow-2xl w-xl h-auto max-h-96 object-cover"
                     />
                     {alt && (
                         <p className="pb-2 font-light text-sm">{alt}</p>
