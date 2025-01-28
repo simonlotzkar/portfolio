@@ -1,7 +1,6 @@
 import React from "react";
 import { SparklesCore } from "../ui/sparkles";
 import SocialLink from "../SocialLink";
-import { EmailLink } from "../EmailLink";
 
 /**
  * Footer displays social links, has a button to return to the top, and credits.
@@ -12,8 +11,7 @@ import { EmailLink } from "../EmailLink";
  *
  * @author SimonLotzkar
  */
-type Props = {};
-const Footer: React.FC<Props> = ({ }) => {
+const Footer: React.FC = () => {
     return (
         <footer className="relative bg-gradient-to-t from-primary to-background py-4 overflow-hidden">
 
