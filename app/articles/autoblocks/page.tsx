@@ -73,7 +73,7 @@ export default function Page() {
 
                 {/* Content: Encounter (list). */}
                 <ArticleContent title="Encounter" img="/images/autoblocks/autoblocks-encounter2.png" alt="Encounter">
-                    <p>The encounter screen has a list of NPCs, a roll log, and an actions list. There's also a few functions while selecting one or more NPCs such as Roll "Initiative" that will output the result to the roll log. HP tracking works the same way. The actions are populated from each NPC and multiple can be selected and rolled at once.</p>
+                    <p>The encounter screen has a list of NPCs, a roll log, and an actions list. There&apos;s also a few functions while selecting one or more NPCs such as Roll "Initiative" that will output the result to the roll log. HP tracking works the same way. The actions are populated from each NPC and multiple can be selected and rolled at once.</p>
                 </ArticleContent>
 
                 {/* Content: Encounter (npc). */}
@@ -105,7 +105,7 @@ export default function Page() {
 
                 {/* Content: History introduction. */}
                 <ArticleContent title="First Version">
-                    <p>The first thing I did for this project was create a list of mechanics I wanted the software to do. The main idea was to automate NPC combat for D&D and to retrieve knowledge quickly. I then built a basic console version of my app that could do the following:</p>
+                    <p>The first thing I did for this project was create a list of mechanics I wanted the software to do. The main idea was to automate NPC combat for D&amp;D and to retrieve knowledge quickly. I then built a basic console version of my app that could do the following:</p>
                     <ol className="A pl-6">
                         <li>
                             A) store/read/edit/create statblocks, and
@@ -119,12 +119,12 @@ export default function Page() {
 
                 {/* Content: Draft: Main menu. */}
                 <ArticleContent title="Frontend Design" img="/images/autoblocks/autoblocks-design-home.png" alt="Main Menu Draft">
-                    <p>Before I began planning the backend, I worked on the frontend of my app because my usual approach is to start with what the user will directly interact with. I decided I wanted to split the two broad functions I had identified above into different screens that could be reached via a main menu. I also knew I wanted a custom roller because there is always something you need to roll in D&D that is unexpected.</p>
+                    <p>Before I began planning the backend, I worked on the frontend of my app because my usual approach is to start with what the user will directly interact with. I decided I wanted to split the two broad functions I had identified above into different screens that could be reached via a main menu. I also knew I wanted a custom roller because there is always something you need to roll in D&amp;D that is unexpected.</p>
                 </ArticleContent>
 
                 {/* Content: Draft: Library. */}
                 <ArticleContent img="/images/autoblocks/autoblocks-design-library.png" alt="Library Draft">
-                    <p>For each drafted screen, I included the names of the different panels I imagined I'd need to create and where they would go using Java Swing. I also wanted to keep certain things shared between the screens such as the button panel. I did this to reduce coupling, code reuse, and ensure the ui stays the same on all screens. So my idea was to have a 'slot' for the button panel and just insert whichever I needed depending on the context. I came up with 5: library, encounter, group, and character.</p>
+                    <p>For each drafted screen, I included the names of the different panels I imagined I&apos;d need to create and where they would go using Java Swing. I also wanted to keep certain things shared between the screens such as the button panel. I did this to reduce coupling, code reuse, and ensure the ui stays the same on all screens. So my idea was to have a &apos;slot&apos; for the button panel and just insert whichever I needed depending on the context. I came up with 5: library, encounter, group, and character.</p>
                 </ArticleContent>
 
                 {/* Content: Draft: Encounter. */}
@@ -146,7 +146,7 @@ export default function Page() {
 
                 {/* Content: Future content. */}
                 <ArticleContent>
-                    <p>I really love what this app can do, however the UI is very crude and there's limitations such as having just one encounter loaded at once. The biggest thing though is that there are quite a few mechanics that aren't automated such as critical hits and saving throws. I'd love to rebuild this as a web app and resolve these issues. Here's my list of features I'd add in the next version:</p>
+                    <p>I really love what this app can do, however the UI is very crude and there&apos;s limitations such as having just one encounter loaded at once. The biggest thing though is that there are quite a few mechanics that aren&apos;t automated such as critical hits and saving throws. I&apos;d love to rebuild this as a web app and resolve these issues. Here&apos;s my list of features I&apos;d add in the next version:</p>
                     <ul>
                         <li>automate skills</li>
                         <li>automate saving throws</li>
@@ -154,7 +154,7 @@ export default function Page() {
                         <li>add advantage and disadvantage option to all rolls</li>
                         <li>display when rolls are criticals (1 or 20 before modifiers) and double damage automatically</li>
                         <li>add turn tracking that update with initiative rolls</li>
-                        <li>redesign hp tracking into 'heal' and 'damage' buttons that take into account resistances and vulnerabilties</li>
+                        <li>redesign hp tracking into &apos;heal&apos; and &apos;damage&apos; buttons that take into account resistances and vulnerabilties</li>
                         <li>add temporary hp</li>
                     </ul>
                 </ArticleContent>
