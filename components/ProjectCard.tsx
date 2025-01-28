@@ -79,7 +79,7 @@ export const ProjectCard = ({
                 <p className="whitespace-normal overflow-wrap-break-word text-lg text-left w-full">{description}</p>
 
                 {/* Image: Project image. */}
-                <Image width="700" height="300" src={img} alt={title} className="rounded-lg py-4 object-cover" />
+                <Image width="700" height="300" src={img} alt={title} className="py-4 object-cover" />
             </div>
 
             {/* Section: Project links. */}
