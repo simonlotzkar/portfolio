@@ -3,7 +3,7 @@
 Static website displaying my projects, experience, education, and skills as a software developer. Serves as a digital resume.
 
 ## 🖥️ Live Demo
-You can view the live portfolio here: [Portfolio Live Site](https://lotzkar.com)  
+You can view the live portfolio here: [Live Site](https://lotzkar.com)
 
 ## 📂 Features
 - **About Me**: Hero visual displaying my github avatar and links to my socials..
