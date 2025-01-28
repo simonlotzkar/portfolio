@@ -51,7 +51,7 @@ export const ProjectCard = ({
             href={href}
             target={target}
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-secondary-dark rounded-lg shadow hover:bg-secondary"
+            className="flex items-center gap-2 px-4 py-2 bg-secondary-dark rounded-lg shadow-md shadow-slate-900 hover:scale-105 hover:bg-secondary"
         >
             {children}
         </a>
@@ -60,16 +60,17 @@ export const ProjectCard = ({
     return (
         <div className="w-full flex flex-col">
             {/* Section: Title, date, subtitle */}
-            <div className="">
+            <div className="flex flex-row justify-between">
                 {/* Text: Project title and date. */}
-                <h2 className="truncate text-2xl tracking-wide font-bold text-accent flex flex-row justify-between ">
+                <h2 className="text-2xl tracking-wide font-bold text-accent">
                     {title}
-                    <span className="bg-primary px-2 py-1 ml-2 rounded-lg truncate text-base text-accent-light font-semibold uppercase">{date}</span>
                 </h2>
-
-                {/* Text: Project subtitle. */}
-                <h3 className="py-1 truncate text-base font-semibold uppercase">{subtitle}</h3>
+                <h4 className="bg-primary px-2 py-1 ml-2 rounded-lg truncate text-base text-accent-light font-semibold uppercase shadow-md shadow-slate-900">
+                    {date}
+                </h4>
             </div>
+            {/* Text: Project subtitle. */}
+            <h3 className="py-1 truncate text-base font-semibold uppercase">{subtitle}</h3>
 
             {/* Section: Description and image. */}
             <div className="flex flex-col items-center">
@@ -78,7 +79,7 @@ export const ProjectCard = ({
                 <p className="whitespace-normal overflow-wrap-break-word text-lg text-left w-full">{description}</p>
 
                 {/* Image: Project image. */}
-                <Image width="700" height="300" src={img} alt={title} className="rounded-lg py-4 object-cover"/>
+                <Image width="700" height="300" src={img} alt={title} className="rounded-lg py-4 object-cover" />
             </div>
 
             {/* Section: Project links. */}
