@@ -99,7 +99,7 @@ export default function Page() {
         href="/resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-center rounded-full uppercase tracking-widest font-semibold mb-10 w-[50%] sm:w-[33%] lg:w-[20%] h-auto p-4 bg-secondary-dark shadow-lg hover:bg-secondary shadow-slate-900 hover:scale-105"
+        className="text-center rounded-full uppercase tracking-widest font-semibold mb-10 w-[55%] sm:w-[33%] lg:w-[20%] h-auto p-4 bg-secondary-dark shadow-lg hover:bg-secondary shadow-slate-900 hover:scale-105"
       >
         My Resume
       </a>

@@ -38,7 +38,7 @@ const Navbar = () => {
 
                 const rect = section.getBoundingClientRect();
 
-                if (rect.top - navbarHeight <= 0 && rect.bottom - navbarHeight >= 0) {
+                if (rect.top - navbarHeight - 30 <= 0 && rect.bottom - navbarHeight - 30 >= 0) {
 
                     currentSection = section.getAttribute("id") || "title";
                 }
@@ -47,12 +47,23 @@ const Navbar = () => {
             setActiveSection(currentSection);
         };
 
-        // Add event listener for scrolling.
-        window.addEventListener("scroll", handleScroll);
+        // Debounce scroll events for better performance.
+        const debounceScroll = () => {
+            let timeout: NodeJS.Timeout;
+            return () => {
+                clearTimeout(timeout);
+                timeout = setTimeout(() => handleScroll(), 50);
+            };
+        };
 
-        // Remove event listener when Navbar is unmounted.
+        const debouncedHandleScroll = debounceScroll();
+
+        // Add the event listener.
+        window.addEventListener("scroll", debouncedHandleScroll);
+
+        // Cleanup the event listener on unmount.
         return () => {
-            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("scroll", debouncedHandleScroll);
         };
     }, []);
 
@@ -112,10 +123,10 @@ const Navbar = () => {
                     <li>
                         <a
                             href="/resume.pdf" target="_blank" rel="noopener noreferrer"
-                            className="p-2 sm:p-3 md:p-4 hover:text-accent hover:border-b-2"
+                            className="py-4 px-4 sm:px-2 md:px-4 hover:border-b-2 group group"
                         >
-                            <span className="sm:hidden">📄</span>
-                            <span className="hidden sm:inline">Resume</span>
+                            <span className="sm:hidden group-hover:text-accent">📄</span>
+                            <span className="hidden sm:inline group-hover:text-accent">Resume</span>
                         </a>
                     </li>
                 </ul>
