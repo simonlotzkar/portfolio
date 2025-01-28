@@ -73,7 +73,7 @@ export default function Page() {
 
                 {/* Content: Encounter (list). */}
                 <ArticleContent title="Encounter" img="/images/autoblocks/autoblocks-encounter2.png" alt="Encounter">
-                    <p>The encounter screen has a list of NPCs, a roll log, and an actions list. There&apos;s also a few functions while selecting one or more NPCs such as Roll "Initiative" that will output the result to the roll log. HP tracking works the same way. The actions are populated from each NPC and multiple can be selected and rolled at once.</p>
+                    <p>The encounter screen has a list of NPCs, a roll log, and an actions list. There&apos;s also a few functions while selecting one or more NPCs such as Roll &quot;Initiative&quot; that will output the result to the roll log. HP tracking works the same way. The actions are populated from each NPC and multiple can be selected and rolled at once.</p>
                 </ArticleContent>
 
                 {/* Content: Encounter (npc). */}
