@@ -67,7 +67,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
             <div className="flex flex-row items-center mb-2 sm:my-2">
 
                 {/* Image: Company image. */}
-                {img && <Image width="64" height="64" src={img} alt={title} className="rounded-sm mr-2 h-8 w-auto border-2 border-slate-900 shadow-md shadow-slate-900" />}
+                {img && <Image width="64" height="64" src={img} alt={title} className="mr-2 h-8 w-auto border-2 border-slate-900" />}
 
                 {/* Text: Company name. */}
                 <h3 className="truncate leading-8 font-semibold uppercase">{company}</h3>
