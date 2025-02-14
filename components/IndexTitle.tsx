@@ -3,7 +3,7 @@ import { SparklesCore } from "./ui/sparkles"
 import { TextGenerateEffect } from "./ui/text-generate-effect"
 import SocialLink from "./SocialLink"
 import { EmailLink } from "./EmailLink"
-import { myName, myTitle } from "@/data"
+import { myEmail, myName, myTitle } from "@/data"
 
 /**
  * Full-screen display that shows my name, title, and has links to my email, linkedin,
@@ -57,7 +57,7 @@ const IndexTitle = () => {
                 <div className="flex justify-center space-x-6 2xl:space-x-12 mt-8 2xl:mt-12">
 
                     {/* PopupButton: Email. */}
-                    <EmailLink email="simonlotzkar@gmail.com">
+                    <EmailLink email={myEmail}>
                         <svg fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 12.713l11.985-8.713h-23.97l11.985 8.713zm0 2.287l-12-8.713v12.713h24v-12.713l-12 8.713z" />
                         </svg>

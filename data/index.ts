@@ -5,9 +5,12 @@ export const myTitle = "Software Developer (Vancouver, BC)";
 // Metadata
 export const siteTitle = `${myName} | Portfolio`;
 export const siteDescription = "Simon Lotzkar's portfolio and digital resume. Showcases various projects and articles on their creation. Includes contact details and additional professional information.";
-export const siteURL = "simon@lotzkar.com";
+export const siteURL = "simonlotzkar.com";
 export const siteThumbnailPath = "/site-thumbnail.png";
 export const siteThumbnailAlt = "Thumbnail of website title screen displaying 'Simon Lotzkar' and his profile picture.";
+
+// Contact Info
+export const myEmail = "simon@lotzkar.com";
 
 // Projects
 interface Project {
